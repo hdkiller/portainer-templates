@@ -21,6 +21,16 @@ def main():
         }
 
         for template in templates.get('templates', []):
+            if 'volumes' in template and template['volumes']:
+                for volume in template['volumes']:
+                    if 'bind' in volume:
+                        volume['bind'] = volume['bind'].replace('/portainer/Files/AppData/Config/', '/opt/appdata/').lower()
+                        volume['bind'] = volume['bind'].replace('/volume1/docker/', '/opt/appdata/').lower()
+
+            # If there is only one volume, and the bind is ends with /config, remove the /config from the container
+            if 'volumes' in template and len(template['volumes']) == 1 and 'bind' in template['volumes'][0] and template['volumes'][0]['bind'].endswith('/config'):
+                template['volumes'][0]['bind'] = template['volumes'][0]['bind'].replace('/config', '')
+
             if 'network' in template and template['network'] != 'bridge':
                 template['network'] = 'web'
             if 'ports' in template and template['ports'] and 'name' in template:
