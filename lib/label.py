@@ -56,7 +56,8 @@ def main():
             templates_with_labels['templates'].append(template)
         
         
-        # pprint(templates_with_labels)
+        with open(os.path.join(script_dir, '..', 'templates_with_labels.json'), 'w') as file:
+            json.dump(templates_with_labels, file, indent=4)
     except Exception as e:
         print("Error: ", e.message)
 
