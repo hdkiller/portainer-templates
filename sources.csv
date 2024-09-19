@@ -11,4 +11,6 @@ mycroftwilde_templates, https://raw.githubusercontent.com/mycroftwilde/portainer
 mediadepot_templates, https://raw.githubusercontent.com/mediadepot/templates/master/portainer.json, https://github.com/mediadepot/templates/
 shmolf_templates, https://raw.githubusercontent.com/shmolf/portainer-templates/main/templates-2.0.json, https://github.com/shmolf/portainer-templates/
 redcloud_templates, https://raw.githubusercontent.com/khast3x/Redcloud/refs/heads/master/templates/templates.yml, https://github.com/khast3x/Redcloud/
+ntvone_templates,https://raw.githubusercontent.com/ntv-one/portainer/main/template.json, https://github.com/ntv-one/portainer/
 portainer_templates, https://raw.githubusercontent.com/portainer/templates/master/templates-2.0.json, https://github.com/portainer/templates/
+ 
