@@ -27,7 +27,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_msf-dev.rule",
-                    "value": "Host(`red_msf-dev`).{$DOMAIN}"
+                    "value": "Host(`red_msf-dev.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_msf-dev.entrypoints",
@@ -122,7 +122,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_msf-postgresql.rule",
-                    "value": "Host(`red_msf-postgresql`).{$DOMAIN}"
+                    "value": "Host(`red_msf-postgresql.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_msf-postgresql.entrypoints",
@@ -223,7 +223,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_empire.rule",
-                    "value": "Host(`red_empire`).{$DOMAIN}"
+                    "value": "Host(`red_empire.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_empire.entrypoints",
@@ -367,7 +367,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_kali-bare.rule",
-                    "value": "Host(`red_kali-bare`).{$DOMAIN}"
+                    "value": "Host(`red_kali-bare.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_kali-bare.entrypoints",
@@ -457,7 +457,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_kali-full.rule",
-                    "value": "Host(`red_kali-full`).{$DOMAIN}"
+                    "value": "Host(`red_kali-full.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_kali-full.entrypoints",
@@ -548,7 +548,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_tor-socks.rule",
-                    "value": "Host(`red_tor-socks`).{$DOMAIN}"
+                    "value": "Host(`red_tor-socks.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_tor-socks.entrypoints",
@@ -638,7 +638,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_multi-tor-socks.rule",
-                    "value": "Host(`red_multi-tor-socks`).{$DOMAIN}"
+                    "value": "Host(`red_multi-tor-socks.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_multi-tor-socks.entrypoints",
@@ -729,7 +729,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_gophish.rule",
-                    "value": "Host(`red_gophish`).{$DOMAIN}"
+                    "value": "Host(`red_gophish.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_gophish.entrypoints",
@@ -843,7 +843,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_spiderfoot.rule",
-                    "value": "Host(`red_spiderfoot`).{$DOMAIN}"
+                    "value": "Host(`red_spiderfoot.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_spiderfoot.entrypoints",
@@ -937,7 +937,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_zap-proxy.rule",
-                    "value": "Host(`red_zap-proxy`).{$DOMAIN}"
+                    "value": "Host(`red_zap-proxy.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_zap-proxy.entrypoints",
@@ -1027,7 +1027,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_ubuntu-vnc.rule",
-                    "value": "Host(`red_ubuntu-vnc`).{$DOMAIN}"
+                    "value": "Host(`red_ubuntu-vnc.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_ubuntu-vnc.entrypoints",
@@ -1118,7 +1118,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_kali-vnc.rule",
-                    "value": "Host(`red_kali-vnc`).{$DOMAIN}"
+                    "value": "Host(`red_kali-vnc.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_kali-vnc.entrypoints",
@@ -1225,7 +1225,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_vuln-dvwa.rule",
-                    "value": "Host(`red_vuln-dvwa`).{$DOMAIN}"
+                    "value": "Host(`red_vuln-dvwa.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_vuln-dvwa.entrypoints",
@@ -1315,7 +1315,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_vuln-juiceshop.rule",
-                    "value": "Host(`red_vuln-juiceshop`).{$DOMAIN}"
+                    "value": "Host(`red_vuln-juiceshop.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_vuln-juiceshop.entrypoints",
@@ -1406,7 +1406,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_vuln-wp.rule",
-                    "value": "Host(`red_vuln-wp`).{$DOMAIN}"
+                    "value": "Host(`red_vuln-wp.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_vuln-wp.entrypoints",
@@ -1496,7 +1496,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_vuln-shellshock.rule",
-                    "value": "Host(`red_vuln-shellshock`).{$DOMAIN}"
+                    "value": "Host(`red_vuln-shellshock.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_vuln-shellshock.entrypoints",
@@ -1588,7 +1588,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_vuln-samba.rule",
-                    "value": "Host(`red_vuln-samba`).{$DOMAIN}"
+                    "value": "Host(`red_vuln-samba.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_vuln-samba.entrypoints",
@@ -1688,7 +1688,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_vuln-mutillidae.rule",
-                    "value": "Host(`red_vuln-mutillidae`).{$DOMAIN}"
+                    "value": "Host(`red_vuln-mutillidae.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_vuln-mutillidae.entrypoints",
@@ -1800,7 +1800,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_softethervpn.rule",
-                    "value": "Host(`red_softethervpn`).{$DOMAIN}"
+                    "value": "Host(`red_softethervpn.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_softethervpn.entrypoints",
@@ -1889,7 +1889,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_cowrie.rule",
-                    "value": "Host(`red_cowrie`).{$DOMAIN}"
+                    "value": "Host(`red_cowrie.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_cowrie.entrypoints",
@@ -1976,7 +1976,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_endlessh.rule",
-                    "value": "Host(`red_endlessh`).{$DOMAIN}"
+                    "value": "Host(`red_endlessh.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_endlessh.entrypoints",
@@ -2066,7 +2066,7 @@
                 },
                 {
                     "name": "traefik.http.routers.red_beagle.rule",
-                    "value": "Host(`red_beagle`).{$DOMAIN}"
+                    "value": "Host(`red_beagle.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.red_beagle.entrypoints",
@@ -2613,7 +2613,7 @@
                 },
                 {
                     "name": "traefik.http.routers.apprise-api.rule",
-                    "value": "Host(`apprise-api`).{$DOMAIN}"
+                    "value": "Host(`apprise-api.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.apprise-api.entrypoints",
@@ -2733,7 +2733,7 @@
                 },
                 {
                     "name": "traefik.http.routers.pwndrop.rule",
-                    "value": "Host(`pwndrop`).{$DOMAIN}"
+                    "value": "Host(`pwndrop.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.pwndrop.entrypoints",
@@ -2847,7 +2847,7 @@
                 },
                 {
                     "name": "traefik.http.routers.firefox.rule",
-                    "value": "Host(`firefox`).{$DOMAIN}"
+                    "value": "Host(`firefox.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.firefox.entrypoints",
@@ -2980,7 +2980,7 @@
                 },
                 {
                     "name": "traefik.http.routers.freeboard.rule",
-                    "value": "Host(`freeboard`).{$DOMAIN}"
+                    "value": "Host(`freeboard.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.freeboard.entrypoints",
@@ -3070,7 +3070,7 @@
                 },
                 {
                     "name": "traefik.http.routers.ghostfolio.rule",
-                    "value": "Host(`ghostfolio`).{$DOMAIN}"
+                    "value": "Host(`ghostfolio.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.ghostfolio.entrypoints",
@@ -3160,7 +3160,7 @@
                 },
                 {
                     "name": "traefik.http.routers.servas.rule",
-                    "value": "Host(`servas`).{$DOMAIN}"
+                    "value": "Host(`servas.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.servas.entrypoints",
@@ -3250,7 +3250,7 @@
                 },
                 {
                     "name": "traefik.http.routers.wallabag.rule",
-                    "value": "Host(`wallabag`).{$DOMAIN}"
+                    "value": "Host(`wallabag.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.wallabag.entrypoints",
@@ -3355,7 +3355,7 @@
                 },
                 {
                     "name": "traefik.http.routers.prowlarr.rule",
-                    "value": "Host(`prowlarr`).{$DOMAIN}"
+                    "value": "Host(`prowlarr.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.prowlarr.entrypoints",
@@ -3460,7 +3460,7 @@
                 },
                 {
                     "name": "traefik.http.routers.pi.alert.rule",
-                    "value": "Host(`pi.alert`).{$DOMAIN}"
+                    "value": "Host(`pi.alert.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.pi.alert.entrypoints",
@@ -3564,7 +3564,7 @@
                 },
                 {
                     "name": "traefik.http.routers.trilium.rule",
-                    "value": "Host(`trilium`).{$DOMAIN}"
+                    "value": "Host(`trilium.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.trilium.entrypoints",
@@ -3729,7 +3729,7 @@
                 },
                 {
                     "name": "traefik.http.routers.audiobookshelf.rule",
-                    "value": "Host(`audiobookshelf`).{$DOMAIN}"
+                    "value": "Host(`audiobookshelf.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.audiobookshelf.entrypoints",
@@ -3937,7 +3937,7 @@
                 },
                 {
                     "name": "traefik.http.routers.readerr.rule",
-                    "value": "Host(`readerr`).{$DOMAIN}"
+                    "value": "Host(`readerr.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.readerr.entrypoints",
@@ -4064,7 +4064,7 @@
                 },
                 {
                     "name": "traefik.http.routers.calibre.rule",
-                    "value": "Host(`calibre`).{$DOMAIN}"
+                    "value": "Host(`calibre.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.calibre.entrypoints",
@@ -4185,7 +4185,7 @@
                 },
                 {
                     "name": "traefik.http.routers.habridge.rule",
-                    "value": "Host(`habridge`).{$DOMAIN}"
+                    "value": "Host(`habridge.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.habridge.entrypoints",
@@ -4296,7 +4296,7 @@
                 },
                 {
                     "name": "traefik.http.routers.magicmirror2.rule",
-                    "value": "Host(`magicmirror2`).{$DOMAIN}"
+                    "value": "Host(`magicmirror2.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.magicmirror2.entrypoints",
@@ -4409,7 +4409,7 @@
                 },
                 {
                     "name": "traefik.http.routers.komga.rule",
-                    "value": "Host(`komga`).{$DOMAIN}"
+                    "value": "Host(`komga.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.komga.entrypoints",
@@ -4522,7 +4522,7 @@
                 },
                 {
                     "name": "traefik.http.routers.kavita.rule",
-                    "value": "Host(`kavita`).{$DOMAIN}"
+                    "value": "Host(`kavita.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.kavita.entrypoints",
@@ -4666,7 +4666,7 @@
                 },
                 {
                     "name": "traefik.http.routers.snipe-it.rule",
-                    "value": "Host(`snipe-it`).{$DOMAIN}"
+                    "value": "Host(`snipe-it.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.snipe-it.entrypoints",
@@ -4759,7 +4759,7 @@
                 },
                 {
                     "name": "traefik.http.routers.uptime-kuma.rule",
-                    "value": "Host(`uptime-kuma`).{$DOMAIN}"
+                    "value": "Host(`uptime-kuma.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.uptime-kuma.entrypoints",
@@ -4880,7 +4880,7 @@
                 },
                 {
                     "name": "traefik.http.routers.nodered.rule",
-                    "value": "Host(`nodered`).{$DOMAIN}"
+                    "value": "Host(`nodered.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.nodered.entrypoints",
@@ -4967,7 +4967,7 @@
                 },
                 {
                     "name": "traefik.http.routers.draw.io.rule",
-                    "value": "Host(`draw.io`).{$DOMAIN}"
+                    "value": "Host(`draw.io.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.draw.io.entrypoints",
@@ -5108,7 +5108,7 @@
                 },
                 {
                     "name": "traefik.http.routers.flame-dashboard.rule",
-                    "value": "Host(`flame-dashboard`).{$DOMAIN}"
+                    "value": "Host(`flame-dashboard.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.flame-dashboard.entrypoints",
@@ -5223,7 +5223,7 @@
                 },
                 {
                     "name": "traefik.http.routers.foldingathome.rule",
-                    "value": "Host(`foldingathome`).{$DOMAIN}"
+                    "value": "Host(`foldingathome.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.foldingathome.entrypoints",
@@ -5323,7 +5323,7 @@
                 },
                 {
                     "name": "traefik.http.routers.authelia.rule",
-                    "value": "Host(`authelia`).{$DOMAIN}"
+                    "value": "Host(`authelia.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.authelia.entrypoints",
@@ -5440,7 +5440,7 @@
                 },
                 {
                     "name": "traefik.http.routers.bazarr.rule",
-                    "value": "Host(`bazarr`).{$DOMAIN}"
+                    "value": "Host(`bazarr.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.bazarr.entrypoints",
@@ -5553,7 +5553,7 @@
                 },
                 {
                     "name": "traefik.http.routers.beets.rule",
-                    "value": "Host(`beets`).{$DOMAIN}"
+                    "value": "Host(`beets.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.beets.entrypoints",
@@ -5647,7 +5647,7 @@
                 },
                 {
                     "name": "traefik.http.routers.vaultwarden.rule",
-                    "value": "Host(`vaultwarden`).{$DOMAIN}"
+                    "value": "Host(`vaultwarden.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.vaultwarden.entrypoints",
@@ -5765,7 +5765,7 @@
                 },
                 {
                     "name": "traefik.http.routers.booksonic.rule",
-                    "value": "Host(`booksonic`).{$DOMAIN}"
+                    "value": "Host(`booksonic.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.booksonic.entrypoints",
@@ -5918,7 +5918,7 @@
                 },
                 {
                     "name": "traefik.http.routers.cops.rule",
-                    "value": "Host(`cops`).{$DOMAIN}"
+                    "value": "Host(`cops.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.cops.entrypoints",
@@ -6028,7 +6028,7 @@
                 },
                 {
                     "name": "traefik.http.routers.calibre-web.rule",
-                    "value": "Host(`calibre-web`).{$DOMAIN}"
+                    "value": "Host(`calibre-web.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.calibre-web.entrypoints",
@@ -6157,7 +6157,7 @@
                 },
                 {
                     "name": "traefik.http.routers.chevereto.rule",
-                    "value": "Host(`chevereto`).{$DOMAIN}"
+                    "value": "Host(`chevereto.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.chevereto.entrypoints",
@@ -6250,7 +6250,7 @@
                 },
                 {
                     "name": "traefik.http.routers.chowdown.rule",
-                    "value": "Host(`chowdown`).{$DOMAIN}"
+                    "value": "Host(`chowdown.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.chowdown.entrypoints",
@@ -6372,7 +6372,7 @@
                 },
                 {
                     "name": "traefik.http.routers.code-server.rule",
-                    "value": "Host(`code-server`).{$DOMAIN}"
+                    "value": "Host(`code-server.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.code-server.entrypoints",
@@ -6477,7 +6477,7 @@
                 },
                 {
                     "name": "traefik.http.routers.codiad.rule",
-                    "value": "Host(`codiad`).{$DOMAIN}"
+                    "value": "Host(`codiad.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.codiad.entrypoints",
@@ -6590,7 +6590,7 @@
                 },
                 {
                     "name": "traefik.http.routers.couchpotato.rule",
-                    "value": "Host(`couchpotato`).{$DOMAIN}"
+                    "value": "Host(`couchpotato.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.couchpotato.entrypoints",
@@ -6719,7 +6719,7 @@
                 },
                 {
                     "name": "traefik.http.routers.dashmachine.rule",
-                    "value": "Host(`dashmachine`).{$DOMAIN}"
+                    "value": "Host(`dashmachine.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.dashmachine.entrypoints",
@@ -6829,7 +6829,7 @@
                 },
                 {
                     "name": "traefik.http.routers.davos.rule",
-                    "value": "Host(`davos`).{$DOMAIN}"
+                    "value": "Host(`davos.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.davos.entrypoints",
@@ -6977,7 +6977,7 @@
                 },
                 {
                     "name": "traefik.http.routers.domoticz.rule",
-                    "value": "Host(`domoticz`).{$DOMAIN}"
+                    "value": "Host(`domoticz.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.domoticz.entrypoints",
@@ -7128,7 +7128,7 @@
                 },
                 {
                     "name": "traefik.http.routers.duplicati.rule",
-                    "value": "Host(`duplicati`).{$DOMAIN}"
+                    "value": "Host(`duplicati.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.duplicati.entrypoints",
@@ -7246,7 +7246,7 @@
                 },
                 {
                     "name": "traefik.http.routers.emby.rule",
-                    "value": "Host(`emby`).{$DOMAIN}"
+                    "value": "Host(`emby.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.emby.entrypoints",
@@ -7340,7 +7340,7 @@
                 },
                 {
                     "name": "traefik.http.routers.embystat.rule",
-                    "value": "Host(`embystat`).{$DOMAIN}"
+                    "value": "Host(`embystat.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.embystat.entrypoints",
@@ -7438,7 +7438,7 @@
                 },
                 {
                     "name": "traefik.http.routers.filebrowser.rule",
-                    "value": "Host(`filebrowser`).{$DOMAIN}"
+                    "value": "Host(`filebrowser.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.filebrowser.entrypoints",
@@ -7543,7 +7543,7 @@
                 },
                 {
                     "name": "traefik.http.routers.freshrss.rule",
-                    "value": "Host(`freshrss`).{$DOMAIN}"
+                    "value": "Host(`freshrss.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.freshrss.entrypoints",
@@ -7677,7 +7677,7 @@
                 },
                 {
                     "name": "traefik.http.routers.guacamole.rule",
-                    "value": "Host(`guacamole`).{$DOMAIN}"
+                    "value": "Host(`guacamole.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.guacamole.entrypoints",
@@ -7786,7 +7786,7 @@
                 },
                 {
                     "name": "traefik.http.routers.grocy.rule",
-                    "value": "Host(`grocy`).{$DOMAIN}"
+                    "value": "Host(`grocy.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.grocy.entrypoints",
@@ -7899,7 +7899,7 @@
                 },
                 {
                     "name": "traefik.http.routers.headphones.rule",
-                    "value": "Host(`headphones`).{$DOMAIN}"
+                    "value": "Host(`headphones.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.headphones.entrypoints",
@@ -8005,7 +8005,7 @@
                 },
                 {
                     "name": "traefik.http.routers.heimdall.rule",
-                    "value": "Host(`heimdall`).{$DOMAIN}"
+                    "value": "Host(`heimdall.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.heimdall.entrypoints",
@@ -8103,7 +8103,7 @@
                 },
                 {
                     "name": "traefik.http.routers.homer.rule",
-                    "value": "Host(`homer`).{$DOMAIN}"
+                    "value": "Host(`homer.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.homer.entrypoints",
@@ -8196,7 +8196,7 @@
                 },
                 {
                     "name": "traefik.http.routers.huginn.rule",
-                    "value": "Host(`huginn`).{$DOMAIN}"
+                    "value": "Host(`huginn.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.huginn.entrypoints",
@@ -8305,7 +8305,7 @@
                 },
                 {
                     "name": "traefik.http.routers.jackett.rule",
-                    "value": "Host(`jackett`).{$DOMAIN}"
+                    "value": "Host(`jackett.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.jackett.entrypoints",
@@ -8423,7 +8423,7 @@
                 },
                 {
                     "name": "traefik.http.routers.jellyfin.rule",
-                    "value": "Host(`jellyfin`).{$DOMAIN}"
+                    "value": "Host(`jellyfin.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.jellyfin.entrypoints",
@@ -8529,7 +8529,7 @@
                 },
                 {
                     "name": "traefik.http.routers.kodi-headless.rule",
-                    "value": "Host(`kodi-headless`).{$DOMAIN}"
+                    "value": "Host(`kodi-headless.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.kodi-headless.entrypoints",
@@ -8639,7 +8639,7 @@
                 },
                 {
                     "name": "traefik.http.routers.lazylibrarian.rule",
-                    "value": "Host(`lazylibrarian`).{$DOMAIN}"
+                    "value": "Host(`lazylibrarian.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.lazylibrarian.entrypoints",
@@ -8781,7 +8781,7 @@
                 },
                 {
                     "name": "traefik.http.routers.letsencryptswag.rule",
-                    "value": "Host(`letsencryptswag`).{$DOMAIN}"
+                    "value": "Host(`letsencryptswag.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.letsencryptswag.entrypoints",
@@ -8874,7 +8874,7 @@
                 },
                 {
                     "name": "traefik.http.routers.librespeed.rule",
-                    "value": "Host(`librespeed`).{$DOMAIN}"
+                    "value": "Host(`librespeed.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.librespeed.entrypoints",
@@ -8987,7 +8987,7 @@
                 },
                 {
                     "name": "traefik.http.routers.lidarr.rule",
-                    "value": "Host(`lidarr`).{$DOMAIN}"
+                    "value": "Host(`lidarr.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.lidarr.entrypoints",
@@ -9096,7 +9096,7 @@
                 },
                 {
                     "name": "traefik.http.routers.lychee.rule",
-                    "value": "Host(`lychee`).{$DOMAIN}"
+                    "value": "Host(`lychee.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.lychee.entrypoints",
@@ -9206,7 +9206,7 @@
                 },
                 {
                     "name": "traefik.http.routers.mariadb.rule",
-                    "value": "Host(`mariadb`).{$DOMAIN}"
+                    "value": "Host(`mariadb.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.mariadb.entrypoints",
@@ -9303,7 +9303,7 @@
                 },
                 {
                     "name": "traefik.http.routers.mstream.rule",
-                    "value": "Host(`mstream`).{$DOMAIN}"
+                    "value": "Host(`mstream.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.mstream.entrypoints",
@@ -9425,7 +9425,7 @@
                 },
                 {
                     "name": "traefik.http.routers.murmur.rule",
-                    "value": "Host(`murmur`).{$DOMAIN}"
+                    "value": "Host(`murmur.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.murmur.entrypoints",
@@ -9539,7 +9539,7 @@
                 },
                 {
                     "name": "traefik.http.routers.musicbrainz.rule",
-                    "value": "Host(`musicbrainz`).{$DOMAIN}"
+                    "value": "Host(`musicbrainz.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.musicbrainz.entrypoints",
@@ -9644,7 +9644,7 @@
                 },
                 {
                     "name": "traefik.http.routers.muximux.rule",
-                    "value": "Host(`muximux`).{$DOMAIN}"
+                    "value": "Host(`muximux.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.muximux.entrypoints",
@@ -9757,7 +9757,7 @@
                 },
                 {
                     "name": "traefik.http.routers.mylar.rule",
-                    "value": "Host(`mylar`).{$DOMAIN}"
+                    "value": "Host(`mylar.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.mylar.entrypoints",
@@ -9866,7 +9866,7 @@
                 },
                 {
                     "name": "traefik.http.routers.nzbget.rule",
-                    "value": "Host(`nzbget`).{$DOMAIN}"
+                    "value": "Host(`nzbget.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.nzbget.entrypoints",
@@ -9975,7 +9975,7 @@
                 },
                 {
                     "name": "traefik.http.routers.nzbhydra2.rule",
-                    "value": "Host(`nzbhydra2`).{$DOMAIN}"
+                    "value": "Host(`nzbhydra2.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.nzbhydra2.entrypoints",
@@ -10126,7 +10126,7 @@
                 },
                 {
                     "name": "traefik.http.routers.nginx-proxy-manager.rule",
-                    "value": "Host(`nginx-proxy-manager`).{$DOMAIN}"
+                    "value": "Host(`nginx-proxy-manager.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.nginx-proxy-manager.entrypoints",
@@ -10231,7 +10231,7 @@
                 },
                 {
                     "name": "traefik.http.routers.ombi.rule",
-                    "value": "Host(`ombi`).{$DOMAIN}"
+                    "value": "Host(`ombi.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.ombi.entrypoints",
@@ -10343,7 +10343,7 @@
                 },
                 {
                     "name": "traefik.http.routers.openvpn-as.rule",
-                    "value": "Host(`openvpn-as`).{$DOMAIN}"
+                    "value": "Host(`openvpn-as.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.openvpn-as.entrypoints",
@@ -10448,7 +10448,7 @@
                 },
                 {
                     "name": "traefik.http.routers.organizr-v2.rule",
-                    "value": "Host(`organizr-v2`).{$DOMAIN}"
+                    "value": "Host(`organizr-v2.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.organizr-v2.entrypoints",
@@ -10553,7 +10553,7 @@
                 },
                 {
                     "name": "traefik.http.routers.overseerr.rule",
-                    "value": "Host(`overseerr`).{$DOMAIN}"
+                    "value": "Host(`overseerr.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.overseerr.entrypoints",
@@ -10755,7 +10755,7 @@
                 },
                 {
                     "name": "traefik.http.routers.photoshow.rule",
-                    "value": "Host(`photoshow`).{$DOMAIN}"
+                    "value": "Host(`photoshow.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.photoshow.entrypoints",
@@ -10857,7 +10857,7 @@
                 },
                 {
                     "name": "traefik.http.routers.pihole.rule",
-                    "value": "Host(`pihole`).{$DOMAIN}"
+                    "value": "Host(`pihole.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.pihole.entrypoints",
@@ -10962,7 +10962,7 @@
                 },
                 {
                     "name": "traefik.http.routers.piwigo.rule",
-                    "value": "Host(`piwigo`).{$DOMAIN}"
+                    "value": "Host(`piwigo.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.piwigo.entrypoints",
@@ -11118,7 +11118,7 @@
                 },
                 {
                     "name": "traefik.http.routers.plexrequests.rule",
-                    "value": "Host(`plexrequests`).{$DOMAIN}"
+                    "value": "Host(`plexrequests.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.plexrequests.entrypoints",
@@ -11213,7 +11213,7 @@
                 },
                 {
                     "name": "traefik.http.routers.protonmail-bridge.rule",
-                    "value": "Host(`protonmail-bridge`).{$DOMAIN}"
+                    "value": "Host(`protonmail-bridge.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.protonmail-bridge.entrypoints",
@@ -11324,7 +11324,7 @@
                 },
                 {
                     "name": "traefik.http.routers.qbittorrent.rule",
-                    "value": "Host(`qbittorrent`).{$DOMAIN}"
+                    "value": "Host(`qbittorrent.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.qbittorrent.entrypoints",
@@ -11437,7 +11437,7 @@
                 },
                 {
                     "name": "traefik.http.routers.radarr.rule",
-                    "value": "Host(`radarr`).{$DOMAIN}"
+                    "value": "Host(`radarr.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.radarr.entrypoints",
@@ -11587,7 +11587,7 @@
                 },
                 {
                     "name": "traefik.http.routers.rutorrent.rule",
-                    "value": "Host(`rutorrent`).{$DOMAIN}"
+                    "value": "Host(`rutorrent.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.rutorrent.entrypoints",
@@ -11701,7 +11701,7 @@
                 },
                 {
                     "name": "traefik.http.routers.sabnzbd.rule",
-                    "value": "Host(`sabnzbd`).{$DOMAIN}"
+                    "value": "Host(`sabnzbd.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.sabnzbd.entrypoints",
@@ -11794,7 +11794,7 @@
                 },
                 {
                     "name": "traefik.http.routers.shiori.rule",
-                    "value": "Host(`shiori`).{$DOMAIN}"
+                    "value": "Host(`shiori.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.shiori.entrypoints",
@@ -11903,7 +11903,7 @@
                 },
                 {
                     "name": "traefik.http.routers.smokeping.rule",
-                    "value": "Host(`smokeping`).{$DOMAIN}"
+                    "value": "Host(`smokeping.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.smokeping.entrypoints",
@@ -11997,7 +11997,7 @@
                 },
                 {
                     "name": "traefik.http.routers.snibox.rule",
-                    "value": "Host(`snibox`).{$DOMAIN}"
+                    "value": "Host(`snibox.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.snibox.entrypoints",
@@ -12114,7 +12114,7 @@
                 },
                 {
                     "name": "traefik.http.routers.sonarr.rule",
-                    "value": "Host(`sonarr`).{$DOMAIN}"
+                    "value": "Host(`sonarr.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.sonarr.entrypoints",
@@ -12224,7 +12224,7 @@
                 },
                 {
                     "name": "traefik.http.routers.syncthing.rule",
-                    "value": "Host(`syncthing`).{$DOMAIN}"
+                    "value": "Host(`syncthing.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.syncthing.entrypoints",
@@ -12334,7 +12334,7 @@
                 },
                 {
                     "name": "traefik.http.routers.tautulli.rule",
-                    "value": "Host(`tautulli`).{$DOMAIN}"
+                    "value": "Host(`tautulli.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.tautulli.entrypoints",
@@ -12427,7 +12427,7 @@
                 },
                 {
                     "name": "traefik.http.routers.tiddlywiki.rule",
-                    "value": "Host(`tiddlywiki`).{$DOMAIN}"
+                    "value": "Host(`tiddlywiki.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.tiddlywiki.entrypoints",
@@ -12532,7 +12532,7 @@
                 },
                 {
                     "name": "traefik.http.routers.tt-rss.rule",
-                    "value": "Host(`tt-rss`).{$DOMAIN}"
+                    "value": "Host(`tt-rss.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.tt-rss.entrypoints",
@@ -12645,7 +12645,7 @@
                 },
                 {
                     "name": "traefik.http.routers.transmission.rule",
-                    "value": "Host(`transmission`).{$DOMAIN}"
+                    "value": "Host(`transmission.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.transmission.entrypoints",
@@ -12776,7 +12776,7 @@
                 },
                 {
                     "name": "traefik.http.routers.transmission-openvpn.rule",
-                    "value": "Host(`transmission-openvpn`).{$DOMAIN}"
+                    "value": "Host(`transmission-openvpn.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.transmission-openvpn.entrypoints",
@@ -12892,7 +12892,7 @@
                 },
                 {
                     "name": "traefik.http.routers.ubooquity.rule",
-                    "value": "Host(`ubooquity`).{$DOMAIN}"
+                    "value": "Host(`ubooquity.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.ubooquity.entrypoints",
@@ -13004,7 +13004,7 @@
                 },
                 {
                     "name": "traefik.http.routers.unifi-controller.rule",
-                    "value": "Host(`unifi-controller`).{$DOMAIN}"
+                    "value": "Host(`unifi-controller.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.unifi-controller.entrypoints",
@@ -13155,7 +13155,7 @@
                 },
                 {
                     "name": "traefik.http.routers.whoogle.rule",
-                    "value": "Host(`whoogle`).{$DOMAIN}"
+                    "value": "Host(`whoogle.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.whoogle.entrypoints",
@@ -13252,7 +13252,7 @@
                 },
                 {
                     "name": "traefik.http.routers.wikijs.rule",
-                    "value": "Host(`wikijs`).{$DOMAIN}"
+                    "value": "Host(`wikijs.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.wikijs.entrypoints",
@@ -13349,7 +13349,7 @@
                 },
                 {
                     "name": "traefik.http.routers.yacht.rule",
-                    "value": "Host(`yacht`).{$DOMAIN}"
+                    "value": "Host(`yacht.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.yacht.entrypoints",
@@ -13463,7 +13463,7 @@
                 },
                 {
                     "name": "traefik.http.routers.audacity.rule",
-                    "value": "Host(`audacity`).{$DOMAIN}"
+                    "value": "Host(`audacity.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.audacity.entrypoints",
@@ -13595,7 +13595,7 @@
                 },
                 {
                     "name": "traefik.http.routers.booksonic-air.rule",
-                    "value": "Host(`booksonic-air`).{$DOMAIN}"
+                    "value": "Host(`booksonic-air.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.booksonic-air.entrypoints",
@@ -13735,7 +13735,7 @@
                 },
                 {
                     "name": "traefik.http.routers.cloud9.rule",
-                    "value": "Host(`cloud9`).{$DOMAIN}"
+                    "value": "Host(`cloud9.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.cloud9.entrypoints",
@@ -13850,7 +13850,7 @@
                 },
                 {
                     "name": "traefik.http.routers.dokuwiki.rule",
-                    "value": "Host(`dokuwiki`).{$DOMAIN}"
+                    "value": "Host(`dokuwiki.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.dokuwiki.entrypoints",
@@ -13976,7 +13976,7 @@
                 },
                 {
                     "name": "traefik.http.routers.emulatorjs.rule",
-                    "value": "Host(`emulatorjs`).{$DOMAIN}"
+                    "value": "Host(`emulatorjs.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.emulatorjs.entrypoints",
@@ -14120,7 +14120,7 @@
                 },
                 {
                     "name": "traefik.http.routers.endlessh.rule",
-                    "value": "Host(`endlessh`).{$DOMAIN}"
+                    "value": "Host(`endlessh.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.endlessh.entrypoints",
@@ -14234,7 +14234,7 @@
                 },
                 {
                     "name": "traefik.http.routers.ffmpeg.rule",
-                    "value": "Host(`ffmpeg`).{$DOMAIN}"
+                    "value": "Host(`ffmpeg.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.ffmpeg.entrypoints",
@@ -14348,7 +14348,7 @@
                 },
                 {
                     "name": "traefik.http.routers.filezilla.rule",
-                    "value": "Host(`filezilla`).{$DOMAIN}"
+                    "value": "Host(`filezilla.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.filezilla.entrypoints",
@@ -14546,7 +14546,7 @@
                 },
                 {
                     "name": "traefik.http.routers.healthchecks.rule",
-                    "value": "Host(`healthchecks`).{$DOMAIN}"
+                    "value": "Host(`healthchecks.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.healthchecks.entrypoints",
@@ -14661,7 +14661,7 @@
                 },
                 {
                     "name": "traefik.http.routers.homeassistant.rule",
-                    "value": "Host(`homeassistant`).{$DOMAIN}"
+                    "value": "Host(`homeassistant.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.homeassistant.entrypoints",
@@ -14787,7 +14787,7 @@
                 },
                 {
                     "name": "traefik.http.routers.kanzi.rule",
-                    "value": "Host(`kanzi`).{$DOMAIN}"
+                    "value": "Host(`kanzi.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.kanzi.entrypoints",
@@ -14902,7 +14902,7 @@
                 },
                 {
                     "name": "traefik.http.routers.ldap-auth.rule",
-                    "value": "Host(`ldap-auth`).{$DOMAIN}"
+                    "value": "Host(`ldap-auth.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.ldap-auth.entrypoints",
@@ -15016,7 +15016,7 @@
                 },
                 {
                     "name": "traefik.http.routers.libreoffice.rule",
-                    "value": "Host(`libreoffice`).{$DOMAIN}"
+                    "value": "Host(`libreoffice.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.libreoffice.entrypoints",
@@ -15130,7 +15130,7 @@
                 },
                 {
                     "name": "traefik.http.routers.limnoria.rule",
-                    "value": "Host(`limnoria`).{$DOMAIN}"
+                    "value": "Host(`limnoria.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.limnoria.entrypoints",
@@ -15288,7 +15288,7 @@
                 },
                 {
                     "name": "traefik.http.routers.nano.rule",
-                    "value": "Host(`nano`).{$DOMAIN}"
+                    "value": "Host(`nano.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.nano.entrypoints",
@@ -15376,7 +15376,7 @@
                 },
                 {
                     "name": "traefik.http.routers.nano-wallet.rule",
-                    "value": "Host(`nano-wallet`).{$DOMAIN}"
+                    "value": "Host(`nano-wallet.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.nano-wallet.entrypoints",
@@ -15610,7 +15610,7 @@
                 },
                 {
                     "name": "traefik.http.routers.netbox.rule",
-                    "value": "Host(`netbox`).{$DOMAIN}"
+                    "value": "Host(`netbox.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.netbox.entrypoints",
@@ -15778,7 +15778,7 @@
                 },
                 {
                     "name": "traefik.http.routers.openssh-server.rule",
-                    "value": "Host(`openssh-server`).{$DOMAIN}"
+                    "value": "Host(`openssh-server.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.openssh-server.entrypoints",
@@ -15902,7 +15902,7 @@
                 },
                 {
                     "name": "traefik.http.routers.paperless-ng.rule",
-                    "value": "Host(`paperless-ng`).{$DOMAIN}"
+                    "value": "Host(`paperless-ng.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.paperless-ng.entrypoints",
@@ -16026,7 +16026,7 @@
                 },
                 {
                     "name": "traefik.http.routers.papermerge.rule",
-                    "value": "Host(`papermerge`).{$DOMAIN}"
+                    "value": "Host(`papermerge.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.papermerge.entrypoints",
@@ -16140,7 +16140,7 @@
                 },
                 {
                     "name": "traefik.http.routers.pidgin.rule",
-                    "value": "Host(`pidgin`).{$DOMAIN}"
+                    "value": "Host(`pidgin.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.pidgin.entrypoints",
@@ -16259,7 +16259,7 @@
                 },
                 {
                     "name": "traefik.http.routers.rdesktop.rule",
-                    "value": "Host(`rdesktop`).{$DOMAIN}"
+                    "value": "Host(`rdesktop.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.rdesktop.entrypoints",
@@ -16381,7 +16381,7 @@
                 },
                 {
                     "name": "traefik.http.routers.rsnapshot.rule",
-                    "value": "Host(`rsnapshot`).{$DOMAIN}"
+                    "value": "Host(`rsnapshot.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.rsnapshot.entrypoints",
@@ -16496,7 +16496,7 @@
                 },
                 {
                     "name": "traefik.http.routers.snapdrop.rule",
-                    "value": "Host(`snapdrop`).{$DOMAIN}"
+                    "value": "Host(`snapdrop.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.snapdrop.entrypoints",
@@ -16621,7 +16621,7 @@
                 },
                 {
                     "name": "traefik.http.routers.webtop.rule",
-                    "value": "Host(`webtop`).{$DOMAIN}"
+                    "value": "Host(`webtop.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.webtop.entrypoints",
@@ -16775,7 +16775,7 @@
                 },
                 {
                     "name": "traefik.http.routers.wireguard.rule",
-                    "value": "Host(`wireguard`).{$DOMAIN}"
+                    "value": "Host(`wireguard.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.wireguard.entrypoints",
@@ -16890,7 +16890,7 @@
                 },
                 {
                     "name": "traefik.http.routers.wireshark.rule",
-                    "value": "Host(`wireshark`).{$DOMAIN}"
+                    "value": "Host(`wireshark.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.wireshark.entrypoints",
@@ -17032,7 +17032,7 @@
                 },
                 {
                     "name": "traefik.http.routers.airsonic-advanced.rule",
-                    "value": "Host(`airsonic-advanced`).{$DOMAIN}"
+                    "value": "Host(`airsonic-advanced.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.airsonic-advanced.entrypoints",
@@ -17158,7 +17158,7 @@
                 },
                 {
                     "name": "traefik.http.routers.phpmyadmin.rule",
-                    "value": "Host(`phpmyadmin`).{$DOMAIN}"
+                    "value": "Host(`phpmyadmin.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.phpmyadmin.entrypoints",
@@ -17288,7 +17288,7 @@
                 },
                 {
                     "name": "traefik.http.routers.pixapop.rule",
-                    "value": "Host(`pixapop`).{$DOMAIN}"
+                    "value": "Host(`pixapop.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.pixapop.entrypoints",
@@ -17408,7 +17408,7 @@
                 },
                 {
                     "name": "traefik.http.routers.syslog-ng.rule",
-                    "value": "Host(`syslog-ng`).{$DOMAIN}"
+                    "value": "Host(`syslog-ng.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.syslog-ng.entrypoints",
@@ -17551,7 +17551,7 @@
                 },
                 {
                     "name": "traefik.http.routers.youtubedl-material.rule",
-                    "value": "Host(`youtubedl-material`).{$DOMAIN}"
+                    "value": "Host(`youtubedl-material.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.youtubedl-material.entrypoints",
@@ -17787,7 +17787,7 @@
                 },
                 {
                     "name": "traefik.http.routers.watchtower.rule",
-                    "value": "Host(`watchtower`).{$DOMAIN}"
+                    "value": "Host(`watchtower.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.watchtower.entrypoints",
@@ -17914,7 +17914,7 @@
                 },
                 {
                     "name": "traefik.http.routers.stirling-pdf.rule",
-                    "value": "Host(`stirling-pdf`).{$DOMAIN}"
+                    "value": "Host(`stirling-pdf.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.stirling-pdf.entrypoints",
@@ -18025,7 +18025,7 @@
                 },
                 {
                     "name": "traefik.http.routers.terraria-server.rule",
-                    "value": "Host(`terraria-server`).{$DOMAIN}"
+                    "value": "Host(`terraria-server.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.terraria-server.entrypoints",
@@ -18113,7 +18113,7 @@
                 },
                 {
                     "name": "traefik.http.routers.cockpit-cms.rule",
-                    "value": "Host(`cockpit-cms`).{$DOMAIN}"
+                    "value": "Host(`cockpit-cms.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.cockpit-cms.entrypoints",
@@ -18309,7 +18309,7 @@
                 },
                 {
                     "name": "traefik.http.routers.code-server.rule",
-                    "value": "Host(`code-server`).{$DOMAIN}"
+                    "value": "Host(`code-server.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.code-server.entrypoints",
@@ -18656,7 +18656,7 @@
                 },
                 {
                     "name": "traefik.http.routers.baserow.rule",
-                    "value": "Host(`baserow`).{$DOMAIN}"
+                    "value": "Host(`baserow.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.baserow.tls",
@@ -18761,7 +18761,7 @@
                 },
                 {
                     "name": "traefik.http.routers.cardigann.rule",
-                    "value": "Host(`cardigann`).{$DOMAIN}"
+                    "value": "Host(`cardigann.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.cardigann.tls",
@@ -18855,7 +18855,7 @@
                 },
                 {
                     "name": "traefik.http.routers.changedetection.rule",
-                    "value": "Host(`changedetection`).{$DOMAIN}"
+                    "value": "Host(`changedetection.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.changedetection.tls",
@@ -18969,7 +18969,7 @@
                 },
                 {
                     "name": "traefik.http.routers.cloudcmd.rule",
-                    "value": "Host(`cloudcmd`).{$DOMAIN}"
+                    "value": "Host(`cloudcmd.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.cloudcmd.tls",
@@ -19079,7 +19079,7 @@
                 },
                 {
                     "name": "traefik.http.routers.duplicacy.rule",
-                    "value": "Host(`duplicacy`).{$DOMAIN}"
+                    "value": "Host(`duplicacy.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.duplicacy.tls",
@@ -19174,7 +19174,7 @@
                 },
                 {
                     "name": "traefik.http.routers.dozzle.rule",
-                    "value": "Host(`dozzle`).{$DOMAIN}"
+                    "value": "Host(`dozzle.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.dozzle.tls",
@@ -19326,7 +19326,7 @@
                 },
                 {
                     "name": "traefik.http.routers.droppy.rule",
-                    "value": "Host(`droppy`).{$DOMAIN}"
+                    "value": "Host(`droppy.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.droppy.tls",
@@ -19439,7 +19439,7 @@
                 },
                 {
                     "name": "traefik.http.routers.gaps.rule",
-                    "value": "Host(`gaps`).{$DOMAIN}"
+                    "value": "Host(`gaps.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.gaps.tls",
@@ -19557,7 +19557,7 @@
                 },
                 {
                     "name": "traefik.http.routers.homepage.rule",
-                    "value": "Host(`homepage`).{$DOMAIN}"
+                    "value": "Host(`homepage.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.homepage.tls",
@@ -19810,7 +19810,7 @@
                 },
                 {
                     "name": "traefik.http.routers.n8n.rule",
-                    "value": "Host(`n8n`).{$DOMAIN}"
+                    "value": "Host(`n8n.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.n8n.tls",
@@ -19927,7 +19927,7 @@
                 },
                 {
                     "name": "traefik.http.routers.netbootxyz.rule",
-                    "value": "Host(`netbootxyz`).{$DOMAIN}"
+                    "value": "Host(`netbootxyz.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.netbootxyz.tls",
@@ -20187,7 +20187,7 @@
                 },
                 {
                     "name": "traefik.http.routers.pureftp.rule",
-                    "value": "Host(`pureftp`).{$DOMAIN}"
+                    "value": "Host(`pureftp.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.pureftp.entrypoints",
@@ -20312,7 +20312,7 @@
                 },
                 {
                     "name": "traefik.http.routers.qdirstat.rule",
-                    "value": "Host(`qdirstat`).{$DOMAIN}"
+                    "value": "Host(`qdirstat.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.qdirstat.tls",
@@ -20435,7 +20435,7 @@
                 },
                 {
                     "name": "traefik.http.routers.scrutiny.rule",
-                    "value": "Host(`scrutiny`).{$DOMAIN}"
+                    "value": "Host(`scrutiny.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.scrutiny.tls",
@@ -20558,7 +20558,7 @@
                 },
                 {
                     "name": "traefik.http.routers.sickrage.rule",
-                    "value": "Host(`sickrage`).{$DOMAIN}"
+                    "value": "Host(`sickrage.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.sickrage.tls",
@@ -20681,7 +20681,7 @@
                 },
                 {
                     "name": "traefik.http.routers.syncserver.rule",
-                    "value": "Host(`syncserver`).{$DOMAIN}"
+                    "value": "Host(`syncserver.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.services.syncserver.loadbalancer.server.port",
@@ -20782,7 +20782,7 @@
                 },
                 {
                     "name": "traefik.http.routers.urlwatch.rule",
-                    "value": "Host(`urlwatch`).{$DOMAIN}"
+                    "value": "Host(`urlwatch.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.urlwatch.tls",
@@ -20921,7 +20921,7 @@
                 },
                 {
                     "name": "traefik.http.routers.vsftpd.rule",
-                    "value": "Host(`vsftpd`).{$DOMAIN}"
+                    "value": "Host(`vsftpd.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.vsftpd.entrypoints",
@@ -21036,7 +21036,7 @@
                 },
                 {
                     "name": "traefik.http.routers.wizarr.rule",
-                    "value": "Host(`wizarr`).{$DOMAIN}"
+                    "value": "Host(`wizarr.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.wizarr.tls",
@@ -21147,7 +21147,7 @@
                 },
                 {
                     "name": "traefik.http.routers.adguard.rule",
-                    "value": "Host(`adguard`).{$DOMAIN}"
+                    "value": "Host(`adguard.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.adguard.entrypoints",
@@ -21278,7 +21278,7 @@
                 },
                 {
                     "name": "traefik.http.routers.airsonic.rule",
-                    "value": "Host(`airsonic`).{$DOMAIN}"
+                    "value": "Host(`airsonic.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.airsonic.entrypoints",
@@ -21393,7 +21393,7 @@
                 },
                 {
                     "name": "traefik.http.routers.archisteamfarm.rule",
-                    "value": "Host(`archisteamfarm`).{$DOMAIN}"
+                    "value": "Host(`archisteamfarm.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.archisteamfarm.entrypoints",
@@ -21492,7 +21492,7 @@
                 },
                 {
                     "name": "traefik.http.routers.deemix.rule",
-                    "value": "Host(`deemix`).{$DOMAIN}"
+                    "value": "Host(`deemix.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.deemix.entrypoints",
@@ -21608,7 +21608,7 @@
                 },
                 {
                     "name": "traefik.http.routers.gitea.rule",
-                    "value": "Host(`gitea`).{$DOMAIN}"
+                    "value": "Host(`gitea.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.gitea.entrypoints",
@@ -21715,7 +21715,7 @@
                 },
                 {
                     "name": "traefik.http.routers.htpcmanager.rule",
-                    "value": "Host(`htpcmanager`).{$DOMAIN}"
+                    "value": "Host(`htpcmanager.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.htpcmanager.entrypoints",
@@ -21869,7 +21869,7 @@
                 },
                 {
                     "name": "traefik.http.routers.jellyseerr.rule",
-                    "value": "Host(`jellyseerr`).{$DOMAIN}"
+                    "value": "Host(`jellyseerr.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.jellyseerr.entrypoints",
@@ -21974,7 +21974,7 @@
                 },
                 {
                     "name": "traefik.http.routers.mcmyadmin2.rule",
-                    "value": "Host(`mcmyadmin2`).{$DOMAIN}"
+                    "value": "Host(`mcmyadmin2.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.mcmyadmin2.entrypoints",
@@ -22088,7 +22088,7 @@
                 },
                 {
                     "name": "traefik.http.routers.medusa.rule",
-                    "value": "Host(`medusa`).{$DOMAIN}"
+                    "value": "Host(`medusa.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.medusa.entrypoints",
@@ -22192,7 +22192,7 @@
                 },
                 {
                     "name": "traefik.http.routers.minetest.rule",
-                    "value": "Host(`minetest`).{$DOMAIN}"
+                    "value": "Host(`minetest.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.minetest.entrypoints",
@@ -22295,7 +22295,7 @@
                 },
                 {
                     "name": "traefik.http.routers.minisatip.rule",
-                    "value": "Host(`minisatip`).{$DOMAIN}"
+                    "value": "Host(`minisatip.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.minisatip.entrypoints",
@@ -22401,7 +22401,7 @@
                 },
                 {
                     "name": "traefik.http.routers.oscam.rule",
-                    "value": "Host(`oscam`).{$DOMAIN}"
+                    "value": "Host(`oscam.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.oscam.entrypoints",
@@ -22489,7 +22489,7 @@
                 },
                 {
                     "name": "traefik.http.routers.passky-client.rule",
-                    "value": "Host(`passky-client`).{$DOMAIN}"
+                    "value": "Host(`passky-client.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.passky-client.entrypoints",
@@ -22595,7 +22595,7 @@
                 },
                 {
                     "name": "traefik.http.routers.passky-server.rule",
-                    "value": "Host(`passky-server`).{$DOMAIN}"
+                    "value": "Host(`passky-server.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.passky-server.entrypoints",
@@ -22707,7 +22707,7 @@
                 },
                 {
                     "name": "traefik.http.routers.projectsend.rule",
-                    "value": "Host(`projectsend`).{$DOMAIN}"
+                    "value": "Host(`projectsend.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.projectsend.entrypoints",
@@ -22817,7 +22817,7 @@
                 },
                 {
                     "name": "traefik.http.routers.pydio.rule",
-                    "value": "Host(`pydio`).{$DOMAIN}"
+                    "value": "Host(`pydio.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.pydio.entrypoints",
@@ -22922,7 +22922,7 @@
                 },
                 {
                     "name": "traefik.http.routers.quassel-core.rule",
-                    "value": "Host(`quassel-core`).{$DOMAIN}"
+                    "value": "Host(`quassel-core.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.quassel-core.entrypoints",
@@ -23016,7 +23016,7 @@
                 },
                 {
                     "name": "traefik.http.routers.reactive-resume.rule",
-                    "value": "Host(`reactive-resume`).{$DOMAIN}"
+                    "value": "Host(`reactive-resume.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.reactive-resume.entrypoints",
@@ -23130,7 +23130,7 @@
                 },
                 {
                     "name": "traefik.http.routers.sickchill.rule",
-                    "value": "Host(`sickchill`).{$DOMAIN}"
+                    "value": "Host(`sickchill.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.sickchill.entrypoints",
@@ -23244,7 +23244,7 @@
                 },
                 {
                     "name": "traefik.http.routers.sickgear.rule",
-                    "value": "Host(`sickgear`).{$DOMAIN}"
+                    "value": "Host(`sickgear.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.sickgear.entrypoints",
@@ -23349,7 +23349,7 @@
                 },
                 {
                     "name": "traefik.http.routers.thelounge.rule",
-                    "value": "Host(`thelounge`).{$DOMAIN}"
+                    "value": "Host(`thelounge.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.thelounge.entrypoints",
@@ -23459,7 +23459,7 @@
                 },
                 {
                     "name": "traefik.http.routers.tvheadend.rule",
-                    "value": "Host(`tvheadend`).{$DOMAIN}"
+                    "value": "Host(`tvheadend.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.tvheadend.entrypoints",
@@ -23566,7 +23566,7 @@
                 },
                 {
                     "name": "traefik.http.routers.twitch-points-miner.rule",
-                    "value": "Host(`twitch-points-miner`).{$DOMAIN}"
+                    "value": "Host(`twitch-points-miner.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.twitch-points-miner.entrypoints",
@@ -23671,7 +23671,7 @@
                 },
                 {
                     "name": "traefik.http.routers.znc.rule",
-                    "value": "Host(`znc`).{$DOMAIN}"
+                    "value": "Host(`znc.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.znc.entrypoints",
@@ -23791,7 +23791,7 @@
                 },
                 {
                     "name": "traefik.http.routers.adguardhome-sync.rule",
-                    "value": "Host(`adguardhome-sync`).{$DOMAIN}"
+                    "value": "Host(`adguardhome-sync.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.adguardhome-sync.entrypoints",
@@ -23906,7 +23906,7 @@
                 },
                 {
                     "name": "traefik.http.routers.altus.rule",
-                    "value": "Host(`altus`).{$DOMAIN}"
+                    "value": "Host(`altus.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.altus.entrypoints",
@@ -24027,7 +24027,7 @@
                 },
                 {
                     "name": "traefik.http.routers.ardour.rule",
-                    "value": "Host(`ardour`).{$DOMAIN}"
+                    "value": "Host(`ardour.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.ardour.entrypoints",
@@ -24147,7 +24147,7 @@
                 },
                 {
                     "name": "traefik.http.routers.babybuddy.rule",
-                    "value": "Host(`babybuddy`).{$DOMAIN}"
+                    "value": "Host(`babybuddy.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.babybuddy.entrypoints",
@@ -24268,7 +24268,7 @@
                 },
                 {
                     "name": "traefik.http.routers.bambustudio.rule",
-                    "value": "Host(`bambustudio`).{$DOMAIN}"
+                    "value": "Host(`bambustudio.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.bambustudio.entrypoints",
@@ -24389,7 +24389,7 @@
                 },
                 {
                     "name": "traefik.http.routers.blender.rule",
-                    "value": "Host(`blender`).{$DOMAIN}"
+                    "value": "Host(`blender.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.blender.entrypoints",
@@ -24510,7 +24510,7 @@
                 },
                 {
                     "name": "traefik.http.routers.boinc.rule",
-                    "value": "Host(`boinc`).{$DOMAIN}"
+                    "value": "Host(`boinc.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.boinc.entrypoints",
@@ -24625,7 +24625,7 @@
                 },
                 {
                     "name": "traefik.http.routers.budge.rule",
-                    "value": "Host(`budge`).{$DOMAIN}"
+                    "value": "Host(`budge.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.budge.entrypoints",
@@ -24739,7 +24739,7 @@
                 },
                 {
                     "name": "traefik.http.routers.build-agent.rule",
-                    "value": "Host(`build-agent`).{$DOMAIN}"
+                    "value": "Host(`build-agent.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.build-agent.entrypoints",
@@ -24854,7 +24854,7 @@
                 },
                 {
                     "name": "traefik.http.routers.calligra.rule",
-                    "value": "Host(`calligra`).{$DOMAIN}"
+                    "value": "Host(`calligra.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.calligra.entrypoints",
@@ -24980,7 +24980,7 @@
                 },
                 {
                     "name": "traefik.http.routers.changedetection.io.rule",
-                    "value": "Host(`changedetection.io`).{$DOMAIN}"
+                    "value": "Host(`changedetection.io.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.changedetection.io.entrypoints",
@@ -25101,7 +25101,7 @@
                 },
                 {
                     "name": "traefik.http.routers.chromium.rule",
-                    "value": "Host(`chromium`).{$DOMAIN}"
+                    "value": "Host(`chromium.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.chromium.entrypoints",
@@ -25215,7 +25215,7 @@
                 },
                 {
                     "name": "traefik.http.routers.ci.rule",
-                    "value": "Host(`ci`).{$DOMAIN}"
+                    "value": "Host(`ci.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.ci.entrypoints",
@@ -25330,7 +25330,7 @@
                 },
                 {
                     "name": "traefik.http.routers.cura.rule",
-                    "value": "Host(`cura`).{$DOMAIN}"
+                    "value": "Host(`cura.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.cura.entrypoints",
@@ -25445,7 +25445,7 @@
                 },
                 {
                     "name": "traefik.http.routers.darktable.rule",
-                    "value": "Host(`darktable`).{$DOMAIN}"
+                    "value": "Host(`darktable.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.darktable.entrypoints",
@@ -25559,7 +25559,7 @@
                 },
                 {
                     "name": "traefik.http.routers.ddclient.rule",
-                    "value": "Host(`ddclient`).{$DOMAIN}"
+                    "value": "Host(`ddclient.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.ddclient.entrypoints",
@@ -25680,7 +25680,7 @@
                 },
                 {
                     "name": "traefik.http.routers.digikam.rule",
-                    "value": "Host(`digikam`).{$DOMAIN}"
+                    "value": "Host(`digikam.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.digikam.entrypoints",
@@ -25810,7 +25810,7 @@
                 },
                 {
                     "name": "traefik.http.routers.diskover.rule",
-                    "value": "Host(`diskover`).{$DOMAIN}"
+                    "value": "Host(`diskover.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.diskover.entrypoints",
@@ -26032,7 +26032,7 @@
                 },
                 {
                     "name": "traefik.http.routers.doplarr.rule",
-                    "value": "Host(`doplarr`).{$DOMAIN}"
+                    "value": "Host(`doplarr.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.doplarr.entrypoints",
@@ -26151,7 +26151,7 @@
                 },
                 {
                     "name": "traefik.http.routers.doublecommander.rule",
-                    "value": "Host(`doublecommander`).{$DOMAIN}"
+                    "value": "Host(`doublecommander.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.doublecommander.entrypoints",
@@ -26344,7 +26344,7 @@
                 },
                 {
                     "name": "traefik.http.routers.fail2ban.rule",
-                    "value": "Host(`fail2ban`).{$DOMAIN}"
+                    "value": "Host(`fail2ban.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.fail2ban.entrypoints",
@@ -26476,7 +26476,7 @@
                 },
                 {
                     "name": "traefik.http.routers.faster-whisper.rule",
-                    "value": "Host(`faster-whisper`).{$DOMAIN}"
+                    "value": "Host(`faster-whisper.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.faster-whisper.entrypoints",
@@ -26636,7 +26636,7 @@
                 },
                 {
                     "name": "traefik.http.routers.ferdium.rule",
-                    "value": "Host(`ferdium`).{$DOMAIN}"
+                    "value": "Host(`ferdium.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.ferdium.entrypoints",
@@ -26780,7 +26780,7 @@
                 },
                 {
                     "name": "traefik.http.routers.fleet.rule",
-                    "value": "Host(`fleet`).{$DOMAIN}"
+                    "value": "Host(`fleet.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.fleet.entrypoints",
@@ -26922,7 +26922,7 @@
                 },
                 {
                     "name": "traefik.http.routers.flexget.rule",
-                    "value": "Host(`flexget`).{$DOMAIN}"
+                    "value": "Host(`flexget.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.flexget.entrypoints",
@@ -27037,7 +27037,7 @@
                 },
                 {
                     "name": "traefik.http.routers.freecad.rule",
-                    "value": "Host(`freecad`).{$DOMAIN}"
+                    "value": "Host(`freecad.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.freecad.entrypoints",
@@ -27152,7 +27152,7 @@
                 },
                 {
                     "name": "traefik.http.routers.freetube.rule",
-                    "value": "Host(`freetube`).{$DOMAIN}"
+                    "value": "Host(`freetube.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.freetube.entrypoints",
@@ -27267,7 +27267,7 @@
                 },
                 {
                     "name": "traefik.http.routers.gimp.rule",
-                    "value": "Host(`gimp`).{$DOMAIN}"
+                    "value": "Host(`gimp.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.gimp.entrypoints",
@@ -27382,7 +27382,7 @@
                 },
                 {
                     "name": "traefik.http.routers.github-desktop.rule",
-                    "value": "Host(`github-desktop`).{$DOMAIN}"
+                    "value": "Host(`github-desktop.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.github-desktop.entrypoints",
@@ -27497,7 +27497,7 @@
                 },
                 {
                     "name": "traefik.http.routers.gitqlient.rule",
-                    "value": "Host(`gitqlient`).{$DOMAIN}"
+                    "value": "Host(`gitqlient.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.gitqlient.entrypoints",
@@ -27611,7 +27611,7 @@
                 },
                 {
                     "name": "traefik.http.routers.grav.rule",
-                    "value": "Host(`grav`).{$DOMAIN}"
+                    "value": "Host(`grav.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.grav.entrypoints",
@@ -27791,7 +27791,7 @@
                 },
                 {
                     "name": "traefik.http.routers.hedgedoc.rule",
-                    "value": "Host(`hedgedoc`).{$DOMAIN}"
+                    "value": "Host(`hedgedoc.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.hedgedoc.entrypoints",
@@ -27917,7 +27917,7 @@
                 },
                 {
                     "name": "traefik.http.routers.hishtory-server.rule",
-                    "value": "Host(`hishtory-server`).{$DOMAIN}"
+                    "value": "Host(`hishtory-server.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.hishtory-server.entrypoints",
@@ -28032,7 +28032,7 @@
                 },
                 {
                     "name": "traefik.http.routers.inkscape.rule",
-                    "value": "Host(`inkscape`).{$DOMAIN}"
+                    "value": "Host(`inkscape.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.inkscape.entrypoints",
@@ -28146,7 +28146,7 @@
                 },
                 {
                     "name": "traefik.http.routers.jenkins-builder.rule",
-                    "value": "Host(`jenkins-builder`).{$DOMAIN}"
+                    "value": "Host(`jenkins-builder.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.jenkins-builder.entrypoints",
@@ -28277,7 +28277,7 @@
                 },
                 {
                     "name": "traefik.http.routers.kali-linux.rule",
-                    "value": "Host(`kali-linux`).{$DOMAIN}"
+                    "value": "Host(`kali-linux.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.kali-linux.entrypoints",
@@ -28411,7 +28411,7 @@
                 },
                 {
                     "name": "traefik.http.routers.kasm.rule",
-                    "value": "Host(`kasm`).{$DOMAIN}"
+                    "value": "Host(`kasm.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.kasm.entrypoints",
@@ -28532,7 +28532,7 @@
                 },
                 {
                     "name": "traefik.http.routers.kdenlive.rule",
-                    "value": "Host(`kdenlive`).{$DOMAIN}"
+                    "value": "Host(`kdenlive.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.kdenlive.entrypoints",
@@ -28647,7 +28647,7 @@
                 },
                 {
                     "name": "traefik.http.routers.keepassxc.rule",
-                    "value": "Host(`keepassxc`).{$DOMAIN}"
+                    "value": "Host(`keepassxc.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.keepassxc.entrypoints",
@@ -28762,7 +28762,7 @@
                 },
                 {
                     "name": "traefik.http.routers.kicad.rule",
-                    "value": "Host(`kicad`).{$DOMAIN}"
+                    "value": "Host(`kicad.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.kicad.entrypoints",
@@ -28883,7 +28883,7 @@
                 },
                 {
                     "name": "traefik.http.routers.kimai.rule",
-                    "value": "Host(`kimai`).{$DOMAIN}"
+                    "value": "Host(`kimai.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.kimai.entrypoints",
@@ -29027,7 +29027,7 @@
                 },
                 {
                     "name": "traefik.http.routers.kometa.rule",
-                    "value": "Host(`kometa`).{$DOMAIN}"
+                    "value": "Host(`kometa.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.kometa.entrypoints",
@@ -29142,7 +29142,7 @@
                 },
                 {
                     "name": "traefik.http.routers.krita.rule",
-                    "value": "Host(`krita`).{$DOMAIN}"
+                    "value": "Host(`krita.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.krita.entrypoints",
@@ -29263,7 +29263,7 @@
                 },
                 {
                     "name": "traefik.http.routers.librewolf.rule",
-                    "value": "Host(`librewolf`).{$DOMAIN}"
+                    "value": "Host(`librewolf.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.librewolf.entrypoints",
@@ -29378,7 +29378,7 @@
                 },
                 {
                     "name": "traefik.http.routers.lollypop.rule",
-                    "value": "Host(`lollypop`).{$DOMAIN}"
+                    "value": "Host(`lollypop.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.lollypop.entrypoints",
@@ -29514,7 +29514,7 @@
                 },
                 {
                     "name": "traefik.http.routers.manyfold.rule",
-                    "value": "Host(`manyfold`).{$DOMAIN}"
+                    "value": "Host(`manyfold.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.manyfold.entrypoints",
@@ -29833,7 +29833,7 @@
                 },
                 {
                     "name": "traefik.http.routers.mastodon.rule",
-                    "value": "Host(`mastodon`).{$DOMAIN}"
+                    "value": "Host(`mastodon.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.mastodon.entrypoints",
@@ -29948,7 +29948,7 @@
                 },
                 {
                     "name": "traefik.http.routers.mediaelch.rule",
-                    "value": "Host(`mediaelch`).{$DOMAIN}"
+                    "value": "Host(`mediaelch.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.mediaelch.entrypoints",
@@ -30117,7 +30117,7 @@
                 },
                 {
                     "name": "traefik.http.routers.monica.rule",
-                    "value": "Host(`monica`).{$DOMAIN}"
+                    "value": "Host(`monica.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.monica.entrypoints",
@@ -30238,7 +30238,7 @@
                 },
                 {
                     "name": "traefik.http.routers.msedge.rule",
-                    "value": "Host(`msedge`).{$DOMAIN}"
+                    "value": "Host(`msedge.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.msedge.entrypoints",
@@ -30359,7 +30359,7 @@
                 },
                 {
                     "name": "traefik.http.routers.mullvad-browser.rule",
-                    "value": "Host(`mullvad-browser`).{$DOMAIN}"
+                    "value": "Host(`mullvad-browser.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.mullvad-browser.entrypoints",
@@ -30481,7 +30481,7 @@
                 },
                 {
                     "name": "traefik.http.routers.mylar3.rule",
-                    "value": "Host(`mylar3`).{$DOMAIN}"
+                    "value": "Host(`mylar3.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.mylar3.entrypoints",
@@ -30596,7 +30596,7 @@
                 },
                 {
                     "name": "traefik.http.routers.mysql-workbench.rule",
-                    "value": "Host(`mysql-workbench`).{$DOMAIN}"
+                    "value": "Host(`mysql-workbench.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.mysql-workbench.entrypoints",
@@ -30710,7 +30710,7 @@
                 },
                 {
                     "name": "traefik.http.routers.ngircd.rule",
-                    "value": "Host(`ngircd`).{$DOMAIN}"
+                    "value": "Host(`ngircd.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.ngircd.entrypoints",
@@ -30825,7 +30825,7 @@
                 },
                 {
                     "name": "traefik.http.routers.obsidian.rule",
-                    "value": "Host(`obsidian`).{$DOMAIN}"
+                    "value": "Host(`obsidian.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.obsidian.entrypoints",
@@ -30963,7 +30963,7 @@
                 },
                 {
                     "name": "traefik.http.routers.openvscode-server.rule",
-                    "value": "Host(`openvscode-server`).{$DOMAIN}"
+                    "value": "Host(`openvscode-server.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.openvscode-server.entrypoints",
@@ -31084,7 +31084,7 @@
                 },
                 {
                     "name": "traefik.http.routers.opera.rule",
-                    "value": "Host(`opera`).{$DOMAIN}"
+                    "value": "Host(`opera.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.opera.entrypoints",
@@ -31199,7 +31199,7 @@
                 },
                 {
                     "name": "traefik.http.routers.orcaslicer.rule",
-                    "value": "Host(`orcaslicer`).{$DOMAIN}"
+                    "value": "Host(`orcaslicer.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.orcaslicer.entrypoints",
@@ -31337,7 +31337,7 @@
                 },
                 {
                     "name": "traefik.http.routers.pairdrop.rule",
-                    "value": "Host(`pairdrop`).{$DOMAIN}"
+                    "value": "Host(`pairdrop.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.pairdrop.entrypoints",
@@ -31487,7 +31487,7 @@
                 },
                 {
                     "name": "traefik.http.routers.piper.rule",
-                    "value": "Host(`piper`).{$DOMAIN}"
+                    "value": "Host(`piper.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.piper.entrypoints",
@@ -31649,7 +31649,7 @@
                 },
                 {
                     "name": "traefik.http.routers.planka.rule",
-                    "value": "Host(`planka`).{$DOMAIN}"
+                    "value": "Host(`planka.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.planka.entrypoints",
@@ -31775,7 +31775,7 @@
                 },
                 {
                     "name": "traefik.http.routers.pydio-cells.rule",
-                    "value": "Host(`pydio-cells`).{$DOMAIN}"
+                    "value": "Host(`pydio-cells.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.pydio-cells.entrypoints",
@@ -31894,7 +31894,7 @@
                 },
                 {
                     "name": "traefik.http.routers.pyload-ng.rule",
-                    "value": "Host(`pyload-ng`).{$DOMAIN}"
+                    "value": "Host(`pyload-ng.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.pyload-ng.entrypoints",
@@ -32030,7 +32030,7 @@
                 },
                 {
                     "name": "traefik.http.routers.pylon.rule",
-                    "value": "Host(`pylon`).{$DOMAIN}"
+                    "value": "Host(`pylon.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.pylon.entrypoints",
@@ -32144,7 +32144,7 @@
                 },
                 {
                     "name": "traefik.http.routers.python.rule",
-                    "value": "Host(`python`).{$DOMAIN}"
+                    "value": "Host(`python.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.python.entrypoints",
@@ -32265,7 +32265,7 @@
                 },
                 {
                     "name": "traefik.http.routers.quassel-core.rule",
-                    "value": "Host(`quassel-core`).{$DOMAIN}"
+                    "value": "Host(`quassel-core.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.quassel-core.entrypoints",
@@ -32404,7 +32404,7 @@
                 },
                 {
                     "name": "traefik.http.routers.quassel-web.rule",
-                    "value": "Host(`quassel-web`).{$DOMAIN}"
+                    "value": "Host(`quassel-web.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.quassel-web.entrypoints",
@@ -32518,7 +32518,7 @@
                 },
                 {
                     "name": "traefik.http.routers.raneto.rule",
-                    "value": "Host(`raneto`).{$DOMAIN}"
+                    "value": "Host(`raneto.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.raneto.entrypoints",
@@ -32633,7 +32633,7 @@
                 },
                 {
                     "name": "traefik.http.routers.rawtherapee.rule",
-                    "value": "Host(`rawtherapee`).{$DOMAIN}"
+                    "value": "Host(`rawtherapee.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.rawtherapee.entrypoints",
@@ -32747,7 +32747,7 @@
                 },
                 {
                     "name": "traefik.http.routers.readme-sync.rule",
-                    "value": "Host(`readme-sync`).{$DOMAIN}"
+                    "value": "Host(`readme-sync.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.readme-sync.entrypoints",
@@ -32862,7 +32862,7 @@
                 },
                 {
                     "name": "traefik.http.routers.remmina.rule",
-                    "value": "Host(`remmina`).{$DOMAIN}"
+                    "value": "Host(`remmina.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.remmina.entrypoints",
@@ -32977,7 +32977,7 @@
                 },
                 {
                     "name": "traefik.http.routers.rustdesk.rule",
-                    "value": "Host(`rustdesk`).{$DOMAIN}"
+                    "value": "Host(`rustdesk.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.rustdesk.entrypoints",
@@ -33092,7 +33092,7 @@
                 },
                 {
                     "name": "traefik.http.routers.series-troxide.rule",
-                    "value": "Host(`series-troxide`).{$DOMAIN}"
+                    "value": "Host(`series-troxide.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.series-troxide.entrypoints",
@@ -33207,7 +33207,7 @@
                 },
                 {
                     "name": "traefik.http.routers.shotcut.rule",
-                    "value": "Host(`shotcut`).{$DOMAIN}"
+                    "value": "Host(`shotcut.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.shotcut.entrypoints",
@@ -33321,7 +33321,7 @@
                 },
                 {
                     "name": "traefik.http.routers.socket-proxy.rule",
-                    "value": "Host(`socket-proxy`).{$DOMAIN}"
+                    "value": "Host(`socket-proxy.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.socket-proxy.entrypoints",
@@ -33501,7 +33501,7 @@
                 },
                 {
                     "name": "traefik.http.routers.speedtest-tracker.rule",
-                    "value": "Host(`speedtest-tracker`).{$DOMAIN}"
+                    "value": "Host(`speedtest-tracker.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.speedtest-tracker.entrypoints",
@@ -33616,7 +33616,7 @@
                 },
                 {
                     "name": "traefik.http.routers.spotube.rule",
-                    "value": "Host(`spotube`).{$DOMAIN}"
+                    "value": "Host(`spotube.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.spotube.entrypoints",
@@ -33731,7 +33731,7 @@
                 },
                 {
                     "name": "traefik.http.routers.sqlitebrowser.rule",
-                    "value": "Host(`sqlitebrowser`).{$DOMAIN}"
+                    "value": "Host(`sqlitebrowser.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.sqlitebrowser.entrypoints",
@@ -33883,7 +33883,7 @@
                 },
                 {
                     "name": "traefik.http.routers.steamos.rule",
-                    "value": "Host(`steamos`).{$DOMAIN}"
+                    "value": "Host(`steamos.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.steamos.entrypoints",
@@ -34058,7 +34058,7 @@
                 },
                 {
                     "name": "traefik.http.routers.swag.rule",
-                    "value": "Host(`swag`).{$DOMAIN}"
+                    "value": "Host(`swag.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.swag.entrypoints",
@@ -34154,7 +34154,7 @@
                 },
                 {
                     "name": "traefik.http.routers.synclounge.rule",
-                    "value": "Host(`synclounge`).{$DOMAIN}"
+                    "value": "Host(`synclounge.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.synclounge.entrypoints",
@@ -34250,7 +34250,7 @@
                 },
                 {
                     "name": "traefik.http.routers.tester.rule",
-                    "value": "Host(`tester`).{$DOMAIN}"
+                    "value": "Host(`tester.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.tester.entrypoints",
@@ -34371,7 +34371,7 @@
                 },
                 {
                     "name": "traefik.http.routers.ungoogled-chromium.rule",
-                    "value": "Host(`ungoogled-chromium`).{$DOMAIN}"
+                    "value": "Host(`ungoogled-chromium.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.ungoogled-chromium.entrypoints",
@@ -34547,7 +34547,7 @@
                 },
                 {
                     "name": "traefik.http.routers.unifi-network-application.rule",
-                    "value": "Host(`unifi-network-application`).{$DOMAIN}"
+                    "value": "Host(`unifi-network-application.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.unifi-network-application.entrypoints",
@@ -34661,7 +34661,7 @@
                 },
                 {
                     "name": "traefik.http.routers.unrar.rule",
-                    "value": "Host(`unrar`).{$DOMAIN}"
+                    "value": "Host(`unrar.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.unrar.entrypoints",
@@ -34776,7 +34776,7 @@
                 },
                 {
                     "name": "traefik.http.routers.vscodium.rule",
-                    "value": "Host(`vscodium`).{$DOMAIN}"
+                    "value": "Host(`vscodium.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.vscodium.entrypoints",
@@ -34891,7 +34891,7 @@
                 },
                 {
                     "name": "traefik.http.routers.webcord.rule",
-                    "value": "Host(`webcord`).{$DOMAIN}"
+                    "value": "Host(`webcord.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.webcord.entrypoints",
@@ -35006,7 +35006,7 @@
                 },
                 {
                     "name": "traefik.http.routers.wps-office.rule",
-                    "value": "Host(`wps-office`).{$DOMAIN}"
+                    "value": "Host(`wps-office.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.wps-office.entrypoints",
@@ -35121,7 +35121,7 @@
                 },
                 {
                     "name": "traefik.http.routers.xbackbone.rule",
-                    "value": "Host(`xbackbone`).{$DOMAIN}"
+                    "value": "Host(`xbackbone.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.xbackbone.entrypoints",
@@ -35236,7 +35236,7 @@
                 },
                 {
                     "name": "traefik.http.routers.yaak.rule",
-                    "value": "Host(`yaak`).{$DOMAIN}"
+                    "value": "Host(`yaak.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.yaak.entrypoints",
@@ -35381,7 +35381,7 @@
                 },
                 {
                     "name": "traefik.http.routers.your_spotify.rule",
-                    "value": "Host(`your_spotify`).{$DOMAIN}"
+                    "value": "Host(`your_spotify.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.your_spotify.entrypoints",
@@ -35495,7 +35495,7 @@
                 },
                 {
                     "name": "traefik.http.routers.yq.rule",
-                    "value": "Host(`yq`).{$DOMAIN}"
+                    "value": "Host(`yq.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.yq.entrypoints",
@@ -35610,7 +35610,7 @@
                 },
                 {
                     "name": "traefik.http.routers.zotero.rule",
-                    "value": "Host(`zotero`).{$DOMAIN}"
+                    "value": "Host(`zotero.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.zotero.entrypoints",
@@ -35721,7 +35721,7 @@
                 },
                 {
                     "name": "traefik.http.routers.adguardhome.rule",
-                    "value": "Host(`adguardhome`).{$DOMAIN}"
+                    "value": "Host(`adguardhome.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.adguardhome.entrypoints",
@@ -35817,7 +35817,7 @@
                 },
                 {
                     "name": "traefik.http.routers.alpine-xfce4-novnc.rule",
-                    "value": "Host(`alpine-xfce4-novnc`).{$DOMAIN}"
+                    "value": "Host(`alpine-xfce4-novnc.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.alpine-xfce4-novnc.entrypoints",
@@ -35925,7 +35925,7 @@
                 },
                 {
                     "name": "traefik.http.routers.apache-httpd.rule",
-                    "value": "Host(`apache-httpd`).{$DOMAIN}"
+                    "value": "Host(`apache-httpd.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.apache-httpd.entrypoints",
@@ -36047,7 +36047,7 @@
                 },
                 {
                     "name": "traefik.http.routers.archivebox.rule",
-                    "value": "Host(`archivebox`).{$DOMAIN}"
+                    "value": "Host(`archivebox.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.archivebox.entrypoints",
@@ -36162,7 +36162,7 @@
                 },
                 {
                     "name": "traefik.http.routers.ariang.rule",
-                    "value": "Host(`ariang`).{$DOMAIN}"
+                    "value": "Host(`ariang.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.ariang.entrypoints",
@@ -36264,7 +36264,7 @@
                 },
                 {
                     "name": "traefik.http.routers.chrony-ntp.rule",
-                    "value": "Host(`chrony-ntp`).{$DOMAIN}"
+                    "value": "Host(`chrony-ntp.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.chrony-ntp.entrypoints",
@@ -36371,7 +36371,7 @@
                 },
                 {
                     "name": "traefik.http.routers.clamav.rule",
-                    "value": "Host(`clamav`).{$DOMAIN}"
+                    "value": "Host(`clamav.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.clamav.entrypoints",
@@ -36540,7 +36540,7 @@
                 },
                 {
                     "name": "traefik.http.routers.davincipostgresserver.rule",
-                    "value": "Host(`davincipostgresserver`).{$DOMAIN}"
+                    "value": "Host(`davincipostgresserver.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.davincipostgresserver.entrypoints",
@@ -36644,7 +36644,7 @@
                 },
                 {
                     "name": "traefik.http.routers.eclipse-mosquitto.rule",
-                    "value": "Host(`eclipse-mosquitto`).{$DOMAIN}"
+                    "value": "Host(`eclipse-mosquitto.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.eclipse-mosquitto.entrypoints",
@@ -36747,7 +36747,7 @@
                 },
                 {
                     "name": "traefik.http.routers.filebrowser-latest.rule",
-                    "value": "Host(`filebrowser-latest`).{$DOMAIN}"
+                    "value": "Host(`filebrowser-latest.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.filebrowser-latest.entrypoints",
@@ -36862,7 +36862,7 @@
                 },
                 {
                     "name": "traefik.http.routers.filebrowser.rule",
-                    "value": "Host(`filebrowser`).{$DOMAIN}"
+                    "value": "Host(`filebrowser.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.filebrowser.entrypoints",
@@ -36968,7 +36968,7 @@
                 },
                 {
                     "name": "traefik.http.routers.flame.rule",
-                    "value": "Host(`flame`).{$DOMAIN}"
+                    "value": "Host(`flame.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.flame.entrypoints",
@@ -37079,7 +37079,7 @@
                 },
                 {
                     "name": "traefik.http.routers.flaresolverr.rule",
-                    "value": "Host(`flaresolverr`).{$DOMAIN}"
+                    "value": "Host(`flaresolverr.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.flaresolverr.entrypoints",
@@ -37196,7 +37196,7 @@
                 },
                 {
                     "name": "traefik.http.routers.foundryvtt.rule",
-                    "value": "Host(`foundryvtt`).{$DOMAIN}"
+                    "value": "Host(`foundryvtt.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.foundryvtt.entrypoints",
@@ -37303,7 +37303,7 @@
                 },
                 {
                     "name": "traefik.http.routers.ghost.rule",
-                    "value": "Host(`ghost`).{$DOMAIN}"
+                    "value": "Host(`ghost.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.ghost.entrypoints",
@@ -37391,7 +37391,7 @@
                 },
                 {
                     "name": "traefik.http.routers.socks5-proxy.rule",
-                    "value": "Host(`socks5-proxy`).{$DOMAIN}"
+                    "value": "Host(`socks5-proxy.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.socks5-proxy.entrypoints",
@@ -37503,7 +37503,7 @@
                 },
                 {
                     "name": "traefik.http.routers.gotify.rule",
-                    "value": "Host(`gotify`).{$DOMAIN}"
+                    "value": "Host(`gotify.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.gotify.entrypoints",
@@ -37619,7 +37619,7 @@
                 },
                 {
                     "name": "traefik.http.routers.homarr.rule",
-                    "value": "Host(`homarr`).{$DOMAIN}"
+                    "value": "Host(`homarr.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.homarr.entrypoints",
@@ -37731,7 +37731,7 @@
                 },
                 {
                     "name": "traefik.http.routers.homarr-secured.rule",
-                    "value": "Host(`homarr-secured`).{$DOMAIN}"
+                    "value": "Host(`homarr-secured.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.homarr-secured.entrypoints",
@@ -37931,7 +37931,7 @@
                 },
                 {
                     "name": "traefik.http.routers.influxdb1810.rule",
-                    "value": "Host(`influxdb1810`).{$DOMAIN}"
+                    "value": "Host(`influxdb1810.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.influxdb1810.entrypoints",
@@ -38037,7 +38037,7 @@
                 },
                 {
                     "name": "traefik.http.routers.iobroker.rule",
-                    "value": "Host(`iobroker`).{$DOMAIN}"
+                    "value": "Host(`iobroker.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.iobroker.entrypoints",
@@ -38153,7 +38153,7 @@
                 },
                 {
                     "name": "traefik.http.routers.jdownloader.rule",
-                    "value": "Host(`jdownloader`).{$DOMAIN}"
+                    "value": "Host(`jdownloader.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.jdownloader.entrypoints",
@@ -38260,7 +38260,7 @@
                 },
                 {
                     "name": "traefik.http.routers.jfa-go.rule",
-                    "value": "Host(`jfa-go`).{$DOMAIN}"
+                    "value": "Host(`jfa-go.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.jfa-go.entrypoints",
@@ -38382,7 +38382,7 @@
                 },
                 {
                     "name": "traefik.http.routers.libreddit.rule",
-                    "value": "Host(`libreddit`).{$DOMAIN}"
+                    "value": "Host(`libreddit.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.libreddit.entrypoints",
@@ -38495,7 +38495,7 @@
                 },
                 {
                     "name": "traefik.http.routers.lldap.rule",
-                    "value": "Host(`lldap`).{$DOMAIN}"
+                    "value": "Host(`lldap.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.lldap.entrypoints",
@@ -38601,7 +38601,7 @@
                 },
                 {
                     "name": "traefik.http.routers.maloja.rule",
-                    "value": "Host(`maloja`).{$DOMAIN}"
+                    "value": "Host(`maloja.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.maloja.entrypoints",
@@ -38753,7 +38753,7 @@
                 },
                 {
                     "name": "traefik.http.routers.mealie.rule",
-                    "value": "Host(`mealie`).{$DOMAIN}"
+                    "value": "Host(`mealie.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.mealie.entrypoints",
@@ -38859,7 +38859,7 @@
                 },
                 {
                     "name": "traefik.http.routers.metube.rule",
-                    "value": "Host(`metube`).{$DOMAIN}"
+                    "value": "Host(`metube.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.metube.entrypoints",
@@ -38962,7 +38962,7 @@
                 },
                 {
                     "name": "traefik.http.routers.minecraft.rule",
-                    "value": "Host(`minecraft`).{$DOMAIN}"
+                    "value": "Host(`minecraft.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.minecraft.entrypoints",
@@ -39093,7 +39093,7 @@
                 },
                 {
                     "name": "traefik.http.routers.netdata.rule",
-                    "value": "Host(`netdata`).{$DOMAIN}"
+                    "value": "Host(`netdata.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.netdata.entrypoints",
@@ -39229,7 +39229,7 @@
                 },
                 {
                     "name": "traefik.http.routers.nginx-proxy-manager-sqllite-goaccess.rule",
-                    "value": "Host(`nginx-proxy-manager-sqllite-goaccess`).{$DOMAIN}"
+                    "value": "Host(`nginx-proxy-manager-sqllite-goaccess.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.nginx-proxy-manager-sqllite-goaccess.entrypoints",
@@ -39347,7 +39347,7 @@
                 },
                 {
                     "name": "traefik.http.routers.nginx-proxy-manager-sqlite.rule",
-                    "value": "Host(`nginx-proxy-manager-sqlite`).{$DOMAIN}"
+                    "value": "Host(`nginx-proxy-manager-sqlite.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.nginx-proxy-manager-sqlite.entrypoints",
@@ -39461,7 +39461,7 @@
                 },
                 {
                     "name": "traefik.http.routers.nginx-proxy-manager-v3.rule",
-                    "value": "Host(`nginx-proxy-manager-v3`).{$DOMAIN}"
+                    "value": "Host(`nginx-proxy-manager-v3.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.nginx-proxy-manager-v3.entrypoints",
@@ -39617,7 +39617,7 @@
                 },
                 {
                     "name": "traefik.http.routers.nord-vpn.rule",
-                    "value": "Host(`nord-vpn`).{$DOMAIN}"
+                    "value": "Host(`nord-vpn.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.nord-vpn.entrypoints",
@@ -39743,7 +39743,7 @@
                 },
                 {
                     "name": "traefik.http.routers.nutserver.rule",
-                    "value": "Host(`nutserver`).{$DOMAIN}"
+                    "value": "Host(`nutserver.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.nutserver.entrypoints",
@@ -39855,7 +39855,7 @@
                 },
                 {
                     "name": "traefik.http.routers.octoprint.rule",
-                    "value": "Host(`octoprint`).{$DOMAIN}"
+                    "value": "Host(`octoprint.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.octoprint.entrypoints",
@@ -39969,7 +39969,7 @@
                 },
                 {
                     "name": "traefik.http.routers.omada-controller.rule",
-                    "value": "Host(`omada-controller`).{$DOMAIN}"
+                    "value": "Host(`omada-controller.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.omada-controller.entrypoints",
@@ -40076,7 +40076,7 @@
                 },
                 {
                     "name": "traefik.http.routers.organizr-v2.rule",
-                    "value": "Host(`organizr-v2`).{$DOMAIN}"
+                    "value": "Host(`organizr-v2.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.organizr-v2.entrypoints",
@@ -40385,7 +40385,7 @@
                 },
                 {
                     "name": "traefik.http.routers.pgadmin.rule",
-                    "value": "Host(`pgadmin`).{$DOMAIN}"
+                    "value": "Host(`pgadmin.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.pgadmin.entrypoints",
@@ -40488,7 +40488,7 @@
                 },
                 {
                     "name": "traefik.http.routers.piholedohdot.rule",
-                    "value": "Host(`piholedohdot`).{$DOMAIN}"
+                    "value": "Host(`piholedohdot.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.piholedohdot.entrypoints",
@@ -40630,7 +40630,7 @@
                 },
                 {
                     "name": "traefik.http.routers.pihole-unbound.rule",
-                    "value": "Host(`pihole-unbound`).{$DOMAIN}"
+                    "value": "Host(`pihole-unbound.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.pihole-unbound.entrypoints",
@@ -40736,7 +40736,7 @@
                 },
                 {
                     "name": "traefik.http.routers.pixel-server.rule",
-                    "value": "Host(`pixel-server`).{$DOMAIN}"
+                    "value": "Host(`pixel-server.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.pixel-server.entrypoints",
@@ -40850,7 +40850,7 @@
                 },
                 {
                     "name": "traefik.http.routers.privatebin.rule",
-                    "value": "Host(`privatebin`).{$DOMAIN}"
+                    "value": "Host(`privatebin.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.privatebin.entrypoints",
@@ -40976,7 +40976,7 @@
                 },
                 {
                     "name": "traefik.http.routers.qflood.rule",
-                    "value": "Host(`qflood`).{$DOMAIN}"
+                    "value": "Host(`qflood.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.qflood.entrypoints",
@@ -41075,7 +41075,7 @@
                 },
                 {
                     "name": "traefik.http.routers.raspberrypi-docker-monitor.rule",
-                    "value": "Host(`raspberrypi-docker-monitor`).{$DOMAIN}"
+                    "value": "Host(`raspberrypi-docker-monitor.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.raspberrypi-docker-monitor.entrypoints",
@@ -41210,7 +41210,7 @@
                 },
                 {
                     "name": "traefik.http.routers.samba.rule",
-                    "value": "Host(`samba`).{$DOMAIN}"
+                    "value": "Host(`samba.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.samba.entrypoints",
@@ -41317,7 +41317,7 @@
                 },
                 {
                     "name": "traefik.http.routers.searxng.rule",
-                    "value": "Host(`searxng`).{$DOMAIN}"
+                    "value": "Host(`searxng.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.searxng.entrypoints",
@@ -41412,7 +41412,7 @@
                 },
                 {
                     "name": "traefik.http.routers.snippet-box.rule",
-                    "value": "Host(`snippet-box`).{$DOMAIN}"
+                    "value": "Host(`snippet-box.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.snippet-box.entrypoints",
@@ -41501,7 +41501,7 @@
                 },
                 {
                     "name": "traefik.http.routers.sshwifty.rule",
-                    "value": "Host(`sshwifty`).{$DOMAIN}"
+                    "value": "Host(`sshwifty.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.sshwifty.entrypoints",
@@ -41609,7 +41609,7 @@
                 },
                 {
                     "name": "traefik.http.routers.surrealdb.rule",
-                    "value": "Host(`surrealdb`).{$DOMAIN}"
+                    "value": "Host(`surrealdb.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.surrealdb.entrypoints",
@@ -41794,7 +41794,7 @@
                 },
                 {
                     "name": "traefik.http.routers.traefik.rule",
-                    "value": "Host(`traefik`).{$DOMAIN}"
+                    "value": "Host(`traefik.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.traefik.entrypoints",
@@ -41943,7 +41943,7 @@
                 },
                 {
                     "name": "traefik.http.routers.transmission-openvpn-latest.rule",
-                    "value": "Host(`transmission-openvpn-latest`).{$DOMAIN}"
+                    "value": "Host(`transmission-openvpn-latest.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.transmission-openvpn-latest.entrypoints",
@@ -42092,7 +42092,7 @@
                 },
                 {
                     "name": "traefik.http.routers.transmission-openvpn.rule",
-                    "value": "Host(`transmission-openvpn`).{$DOMAIN}"
+                    "value": "Host(`transmission-openvpn.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.transmission-openvpn.entrypoints",
@@ -42220,7 +42220,7 @@
                 },
                 {
                     "name": "traefik.http.routers.unifivideo.rule",
-                    "value": "Host(`unifivideo`).{$DOMAIN}"
+                    "value": "Host(`unifivideo.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.unifivideo.entrypoints",
@@ -42334,7 +42334,7 @@
                 },
                 {
                     "name": "traefik.http.routers.unmanic.rule",
-                    "value": "Host(`unmanic`).{$DOMAIN}"
+                    "value": "Host(`unmanic.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.unmanic.entrypoints",
@@ -42423,7 +42423,7 @@
                 },
                 {
                     "name": "traefik.http.routers.vlmcsd-kms.rule",
-                    "value": "Host(`vlmcsd-kms`).{$DOMAIN}"
+                    "value": "Host(`vlmcsd-kms.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.vlmcsd-kms.entrypoints",
@@ -42759,7 +42759,7 @@
                 },
                 {
                     "name": "traefik.http.routers.bind9.rule",
-                    "value": "Host(`bind9`).{$DOMAIN}"
+                    "value": "Host(`bind9.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.bind9.entrypoints",
@@ -42854,7 +42854,7 @@
                 },
                 {
                     "name": "traefik.http.routers.bitwardenrs.rule",
-                    "value": "Host(`bitwardenrs`).{$DOMAIN}"
+                    "value": "Host(`bitwardenrs.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.bitwardenrs.entrypoints",
@@ -43134,7 +43134,7 @@
                 },
                 {
                     "name": "traefik.http.routers.collabora.rule",
-                    "value": "Host(`collabora`).{$DOMAIN}"
+                    "value": "Host(`collabora.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.collabora.entrypoints",
@@ -43308,7 +43308,7 @@
                 },
                 {
                     "name": "traefik.http.routers.cryptofolio.rule",
-                    "value": "Host(`cryptofolio`).{$DOMAIN}"
+                    "value": "Host(`cryptofolio.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.cryptofolio.entrypoints",
@@ -43413,7 +43413,7 @@
                 },
                 {
                     "name": "traefik.http.routers.curanovnc.rule",
-                    "value": "Host(`curanovnc`).{$DOMAIN}"
+                    "value": "Host(`curanovnc.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.curanovnc.entrypoints",
@@ -43592,7 +43592,7 @@
                 },
                 {
                     "name": "traefik.http.routers.deluge-openvpn.rule",
-                    "value": "Host(`deluge-openvpn`).{$DOMAIN}"
+                    "value": "Host(`deluge-openvpn.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.deluge-openvpn.entrypoints",
@@ -43785,7 +43785,7 @@
                 },
                 {
                     "name": "traefik.http.routers.dradis.rule",
-                    "value": "Host(`dradis`).{$DOMAIN}"
+                    "value": "Host(`dradis.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.dradis.entrypoints",
@@ -44029,7 +44029,7 @@
                 },
                 {
                     "name": "traefik.http.routers.eufy-security-ws.rule",
-                    "value": "Host(`eufy-security-ws`).{$DOMAIN}"
+                    "value": "Host(`eufy-security-ws.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.eufy-security-ws.entrypoints",
@@ -44282,7 +44282,7 @@
                 },
                 {
                     "name": "traefik.http.routers.flatnotes.rule",
-                    "value": "Host(`flatnotes`).{$DOMAIN}"
+                    "value": "Host(`flatnotes.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.flatnotes.entrypoints",
@@ -44625,7 +44625,7 @@
                 },
                 {
                     "name": "traefik.http.routers.handbrake.rule",
-                    "value": "Host(`handbrake`).{$DOMAIN}"
+                    "value": "Host(`handbrake.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.handbrake.entrypoints",
@@ -44909,7 +44909,7 @@
                 },
                 {
                     "name": "traefik.http.routers.influxdb.rule",
-                    "value": "Host(`influxdb`).{$DOMAIN}"
+                    "value": "Host(`influxdb.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.influxdb.entrypoints",
@@ -45413,7 +45413,7 @@
                 },
                 {
                     "name": "traefik.http.routers.kasm-renderd128.rule",
-                    "value": "Host(`kasm-renderd128`).{$DOMAIN}"
+                    "value": "Host(`kasm-renderd128.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.kasm-renderd128.entrypoints",
@@ -45635,7 +45635,7 @@
                 },
                 {
                     "name": "traefik.http.routers.letsencrypt.rule",
-                    "value": "Host(`letsencrypt`).{$DOMAIN}"
+                    "value": "Host(`letsencrypt.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.letsencrypt.entrypoints",
@@ -45801,7 +45801,7 @@
                 },
                 {
                     "name": "traefik.http.routers.lingva-translate.rule",
-                    "value": "Host(`lingva-translate`).{$DOMAIN}"
+                    "value": "Host(`lingva-translate.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.lingva-translate.entrypoints",
@@ -45928,7 +45928,7 @@
                 },
                 {
                     "name": "traefik.http.routers.linkstack.rule",
-                    "value": "Host(`linkstack`).{$DOMAIN}"
+                    "value": "Host(`linkstack.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.linkstack.entrypoints",
@@ -46017,7 +46017,7 @@
                 },
                 {
                     "name": "traefik.http.routers.littlelink-server.rule",
-                    "value": "Host(`littlelink-server`).{$DOMAIN}"
+                    "value": "Host(`littlelink-server.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.littlelink-server.entrypoints",
@@ -46255,7 +46255,7 @@
                 },
                 {
                     "name": "traefik.http.routers.matomo.rule",
-                    "value": "Host(`matomo`).{$DOMAIN}"
+                    "value": "Host(`matomo.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.matomo.entrypoints",
@@ -46397,7 +46397,7 @@
                 },
                 {
                     "name": "traefik.http.routers.memos.rule",
-                    "value": "Host(`memos`).{$DOMAIN}"
+                    "value": "Host(`memos.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.memos.entrypoints",
@@ -46677,7 +46677,7 @@
                 },
                 {
                     "name": "traefik.http.routers.nuts.rule",
-                    "value": "Host(`nuts`).{$DOMAIN}"
+                    "value": "Host(`nuts.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.nuts.entrypoints",
@@ -46909,7 +46909,7 @@
                 },
                 {
                     "name": "traefik.http.routers.openspeedtest.rule",
-                    "value": "Host(`openspeedtest`).{$DOMAIN}"
+                    "value": "Host(`openspeedtest.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.openspeedtest.entrypoints",
@@ -47390,7 +47390,7 @@
                 },
                 {
                     "name": "traefik.http.routers.pi-weather-station.rule",
-                    "value": "Host(`pi-weather-station`).{$DOMAIN}"
+                    "value": "Host(`pi-weather-station.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.pi-weather-station.entrypoints",
@@ -47633,7 +47633,7 @@
                 },
                 {
                     "name": "traefik.http.routers.plexripper.rule",
-                    "value": "Host(`plexripper`).{$DOMAIN}"
+                    "value": "Host(`plexripper.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.plexripper.entrypoints",
@@ -47878,7 +47878,7 @@
                 },
                 {
                     "name": "traefik.http.routers.quakejs.rule",
-                    "value": "Host(`quakejs`).{$DOMAIN}"
+                    "value": "Host(`quakejs.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.quakejs.entrypoints",
@@ -48075,7 +48075,7 @@
                 },
                 {
                     "name": "traefik.http.routers.redmine.rule",
-                    "value": "Host(`redmine`).{$DOMAIN}"
+                    "value": "Host(`redmine.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.redmine.entrypoints",
@@ -48252,7 +48252,7 @@
                 },
                 {
                     "name": "traefik.http.routers.requestrr.rule",
-                    "value": "Host(`requestrr`).{$DOMAIN}"
+                    "value": "Host(`requestrr.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.requestrr.entrypoints",
@@ -48349,7 +48349,7 @@
                 },
                 {
                     "name": "traefik.http.routers.revealjs.rule",
-                    "value": "Host(`revealjs`).{$DOMAIN}"
+                    "value": "Host(`revealjs.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.revealjs.entrypoints",
@@ -48572,7 +48572,7 @@
                 },
                 {
                     "name": "traefik.http.routers.slash.rule",
-                    "value": "Host(`slash`).{$DOMAIN}"
+                    "value": "Host(`slash.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.slash.entrypoints",
@@ -48764,7 +48764,7 @@
                 },
                 {
                     "name": "traefik.http.routers.statping.rule",
-                    "value": "Host(`statping`).{$DOMAIN}"
+                    "value": "Host(`statping.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.statping.entrypoints",
@@ -48967,7 +48967,7 @@
                 },
                 {
                     "name": "traefik.http.routers.teeworlds.rule",
-                    "value": "Host(`teeworlds`).{$DOMAIN}"
+                    "value": "Host(`teeworlds.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.teeworlds.entrypoints",
@@ -49226,7 +49226,7 @@
                 },
                 {
                     "name": "traefik.http.routers.umami.rule",
-                    "value": "Host(`umami`).{$DOMAIN}"
+                    "value": "Host(`umami.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.umami.entrypoints",
@@ -49318,7 +49318,7 @@
                 },
                 {
                     "name": "traefik.http.routers.unpollerunificontrollermonitor.rule",
-                    "value": "Host(`unpollerunificontrollermonitor`).{$DOMAIN}"
+                    "value": "Host(`unpollerunificontrollermonitor.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.unpollerunificontrollermonitor.entrypoints",
@@ -49497,7 +49497,7 @@
                 },
                 {
                     "name": "traefik.http.routers.wallos.rule",
-                    "value": "Host(`wallos`).{$DOMAIN}"
+                    "value": "Host(`wallos.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.wallos.entrypoints",
@@ -49655,7 +49655,7 @@
                 },
                 {
                     "name": "traefik.http.routers.whisparr.rule",
-                    "value": "Host(`whisparr`).{$DOMAIN}"
+                    "value": "Host(`whisparr.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.whisparr.entrypoints",
@@ -49752,7 +49752,7 @@
                 },
                 {
                     "name": "traefik.http.routers.win2000.rule",
-                    "value": "Host(`win2000`).{$DOMAIN}"
+                    "value": "Host(`win2000.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.win2000.entrypoints",
@@ -49947,7 +49947,7 @@
                 },
                 {
                     "name": "traefik.http.routers.zusam.rule",
-                    "value": "Host(`zusam`).{$DOMAIN}"
+                    "value": "Host(`zusam.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.zusam.entrypoints",
@@ -50141,7 +50141,7 @@
                 },
                 {
                     "name": "traefik.http.routers.dillinger.rule",
-                    "value": "Host(`dillinger`).{$DOMAIN}"
+                    "value": "Host(`dillinger.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.dillinger.entrypoints",
@@ -50255,7 +50255,7 @@
                 },
                 {
                     "name": "traefik.http.routers.docker-compose.rule",
-                    "value": "Host(`docker-compose`).{$DOMAIN}"
+                    "value": "Host(`docker-compose.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.docker-compose.entrypoints",
@@ -50343,7 +50343,7 @@
                 },
                 {
                     "name": "traefik.http.routers.guacd.rule",
-                    "value": "Host(`guacd`).{$DOMAIN}"
+                    "value": "Host(`guacd.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.guacd.entrypoints",
@@ -50461,7 +50461,7 @@
                 },
                 {
                     "name": "traefik.http.routers.ipfs.rule",
-                    "value": "Host(`ipfs`).{$DOMAIN}"
+                    "value": "Host(`ipfs.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.ipfs.entrypoints",
@@ -50587,7 +50587,7 @@
                 },
                 {
                     "name": "traefik.http.routers.nntp2nntp.rule",
-                    "value": "Host(`nntp2nntp`).{$DOMAIN}"
+                    "value": "Host(`nntp2nntp.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.nntp2nntp.entrypoints",
@@ -50706,7 +50706,7 @@
                 },
                 {
                     "name": "traefik.http.routers.pyload.rule",
-                    "value": "Host(`pyload`).{$DOMAIN}"
+                    "value": "Host(`pyload.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.pyload.entrypoints",
@@ -50800,7 +50800,7 @@
                 },
                 {
                     "name": "traefik.http.routers.taisun.rule",
-                    "value": "Host(`taisun`).{$DOMAIN}"
+                    "value": "Host(`taisun.{$DOMAIN}`)"
                 },
                 {
                     "name": "traefik.http.routers.taisun.entrypoints",

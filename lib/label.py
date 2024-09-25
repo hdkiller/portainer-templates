@@ -77,7 +77,7 @@ def main():
                 labels_to_add = [
                     {"name": "traefik.enable", "value": "true"},
                     # {"name": "traefik.http.routers.{}.rule".format(service_name), "value": "HostRegexp(`^{}\..*`)".format(service_name)},
-                    {"name": "traefik.http.routers.{}.rule".format(service_name), "value": "Host(`{}`)".format(service_name)+'.{$DOMAIN}'},
+                    {"name": "traefik.http.routers.{}.rule".format(service_name), "value": "Host(`{}".format(service_name)+'.{$DOMAIN}'+'`)'},
 
                     {"name": "traefik.http.routers.{}.entrypoints".format(service_name), "value": "https"},
                     {"name": "traefik.http.services.{}.loadbalancer.server.port".format(service_name), "value": service_port},
