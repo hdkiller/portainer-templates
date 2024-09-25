@@ -67,6 +67,10 @@ def main():
 
             if 'network' in template and template['network'] != 'bridge':
                 template['network'] = 'web'
+            
+            if 'network' not in template:
+                template['network'] = 'web'
+            
             if 'ports' in template and template['ports'] and 'name' in template:
                 # try to find the service port
                 for port in template['ports']:
