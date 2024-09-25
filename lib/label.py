@@ -51,6 +51,10 @@ def main():
         }
 
         for template in templates.get('templates', []):
+
+            if 'description' in template:
+                template['description'] = remove_markdown(template['description'])
+
             if 'volumes' in template and template['volumes']:
                 for volume in template['volumes']:
                     if 'bind' in volume:
@@ -120,7 +124,7 @@ def main():
 
                 labels_to_add.extend(mafl_labels_to_add)
 
-
+                
                 # pprint(labels_to_add)
                 print("-" * 100)
                 if 'labels' not in template:
