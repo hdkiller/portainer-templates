@@ -4,6 +4,36 @@ import sys
 from jsonschema import validate, ValidationError
 from pprint import pprint
 
+def remove_markdown(text):
+    import re
+    # Remove markdown links
+    text = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', text)
+    # Remove markdown images
+    text = re.sub(r'!\[([^\]]*)\]\([^\)]+\)', r'\1', text)
+    # Remove markdown headers
+    text = re.sub(r'#+\s*(.*)', r'\1', text)
+    # Remove markdown bold and italic
+    text = re.sub(r'(\*\*|__)(.*?)\1', r'\2', text)
+    text = re.sub(r'(\*|_)(.*?)\1', r'\2', text)
+    # Remove markdown inline code
+    text = re.sub(r'`([^`]+)`', r'\1', text)
+    # Remove markdown code blocks
+    text = re.sub(r'```[\s\S]*?```', '', text)
+    # Remove markdown blockquotes
+    text = re.sub(r'>\s*(.*)', r'\1', text)
+    # Remove markdown horizontal rules
+    text = re.sub(r'---', '', text)
+    return text
+
+def first_sentence(text):
+    import re
+    # Find the first sentence by looking for a period followed by a space or end of string
+    match = re.search(r'[^.!?]*[.!?]', text)
+    if match:
+        return match.group(0).strip()
+    else:
+        return text  # Return the original text if no sentence is found
+
 def load_json_file(file_path):
     with open(file_path, 'r') as file:
         return json.load(file)
@@ -46,13 +76,53 @@ def main():
                 
                 labels_to_add = [
                     {"name": "traefik.enable", "value": "true"},
-                    {"name": "traefik.http.routers.{}.rule".format(service_name), "value": "HostRegexp(`^{}\..*`)".format(service_name)},
+                    # {"name": "traefik.http.routers.{}.rule".format(service_name), "value": "HostRegexp(`^{}\..*`)".format(service_name)},
+                    {"name": "traefik.http.routers.{}.rule".format(service_name), "value": "Host(`{}`)".format(service_name)+'.{$DOMAIN}'},
+
                     {"name": "traefik.http.routers.{}.entrypoints".format(service_name), "value": "https"},
                     {"name": "traefik.http.services.{}.loadbalancer.server.port".format(service_name), "value": service_port},
                     {"name": "traefik.http.routers.{}.tls".format(service_name), "value": "true"},
                     {"name": "traefik.http.routers.{}.tls.certresolver".format(service_name), "value": "default"},
                     {"name": "traefik.http.routers.{}.middlewares".format(service_name), "value": "traefik-forward-auth"}
+                    
                 ]
+
+                mafl_labels_to_add = [
+                    {"name": "mafl.enable", "value": "true"},
+                    {"name": "mafl.title", "value": "{}".format(template.get('title', template.get('name', '')))},
+                    {"name": "mafl.description", "value": "{}".format(first_sentence(remove_markdown(template['description'])))},
+                    # {"name": "mafl.tag", "value": "{}".format(template['tag'])},
+                    {"name": "mafl.link", "value": "https://{}".format(service_name) + '.{$DOMAIN}' },
+                    {"name": "mafl.icon.wrap", "value": "true"},
+                    {"name": "mafl.icon.color", "value": "#007acc"},
+                    {"name": "mafl.status.enabled", "value": "true"},
+                    {"name": "mafl.status.interval", "value": "60"}
+                ]
+
+                if 'categories' in template and template['categories']:
+                    mafl_labels_to_add.extend([
+                        {"name": "mafl.group", "value": "{}".format(template.get('categories', ['Services'])[0])}
+                    ])
+                else:
+                    mafl_labels_to_add.extend([
+                        {"name": "mafl.group", "value": "Services"}
+                    ])
+                    template['categories'] = ['Uncategorized Services']
+
+                if 'logo' in template:
+                    mafl_labels_to_add.extend([
+                        {"name": "mafl.icon.url", "value": "{}".format(template.get('logo', ''))},
+                    ])
+                else:
+                    mafl_labels_to_add.extend([
+                        {"name": "mafl.icon.name", "value": "simple-icons:docker"}
+                    ])
+
+                labels_to_add.extend(mafl_labels_to_add)
+
+
+                # pprint(labels_to_add)
+                print("-" * 100)
                 if 'labels' not in template:
                     template['labels'] = []
                 for label in labels_to_add:

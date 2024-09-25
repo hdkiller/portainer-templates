@@ -14298,6 +14298,49 @@
     },
     {
       "type": 1,
+      "title": "Rawtherapee",
+      "name": "Rawtherapee",
+      "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/rawtherapee/config</p>",
+      "description": "[RawTherapee](https://rawtherapee.com/) is a free, cross-platform raw image processing program!",
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rawtherapee-logo.png",
+      "image": "linuxserver/rawtherapee:latest",
+      "env": [
+        {
+          "name": "PUID",
+          "label": "PUID",
+          "default": "1024",
+          "description": "for UserID"
+        },
+        {
+          "name": "PGID",
+          "label": "PGID",
+          "default": "100",
+          "description": "for GroupID"
+        },
+        {
+          "name": "TZ",
+          "label": "TZ",
+          "default": "Europe/Amsterdam",
+          "description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+        }
+      ],
+      "ports": [
+        "3000:3000/tcp",
+        "3001:3001/tcp"
+      ],
+      "volumes": [
+        {
+          "container": "/config",
+          "bind": "/volume1/docker/rawtherapee/config"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "maintainer": " https://github.com/technorabilia/portainer-templates/",
+      "categories": []
+    },
+    {
+      "type": 1,
       "title": "Readme-sync",
       "name": "Readme-sync",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/readme-sync/config</p>",
@@ -23573,6 +23616,22 @@
         "url": "https://github.com/xneo1/portainer_templates"
       },
       "title": "Hoarder",
+      "type": 3,
+      "maintainer": " https://github.com/xneo1/portainer_templates/"
+    },
+    {
+      "categories": [
+        "Multimedia"
+      ],
+      "description": "TinyMediaManager is a media management tool written in Java/Swing. It is written to provide metadata for the Kodi Media Center (formerly known as XBMC), MediaPortal and Plex media server.",
+      "logo": "https://www.tinymediamanager.org/images/avatar.png",
+      "name": "tinymediamanager",
+      "platform": "linux",
+      "repository": {
+        "stackfile": "Template/Stack/tinymediamanager.yml",
+        "url": "https://github.com/xneo1/portainer_templates"
+      },
+      "title": "TinyMediaManager",
       "type": 3,
       "maintainer": " https://github.com/xneo1/portainer_templates/"
     },
