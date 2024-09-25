@@ -59,7 +59,21 @@ def main():
                 for volume in template['volumes']:
                     if 'bind' in volume:
                         volume['bind'] = volume['bind'].replace('/portainer/Files/AppData/Config/', '/opt/appdata/').lower()
+                        volume['bind'] = volume['bind'].replace('/portainer/files/appdata/', '/opt/appdata/').lower()
                         volume['bind'] = volume['bind'].replace('/volume1/docker/', '/opt/appdata/').lower()
+                        volume['bind'] = volume['bind'].replace('/opt/mediadepot/apps/', '/opt/appdata/').lower()
+                        volume['bind'] = volume['bind'].replace('/media/storage/', '/opt/appdata/').lower()
+                        volume['bind'] = volume['bind'].replace('/portainer/', '/appdata/').lower()
+                        volume['bind'] = volume['bind'].replace('/path/to/', '/appdata/').lower()
+                        if volume['bind'].startswith('/media/'):
+                            volume['bind'] = volume['bind'].replace('/media/', '/appdata/').lower()
+            
+            if 'volumes' in template and template['volumes']:
+                for volume in template['volumes']:
+                    if 'bind' in volume:
+                        volume['bind'] = volume['bind'].strip()
+
+
 
             # If there is only one volume, and the bind is ends with /config, remove the /config from the container
             if 'volumes' in template and len(template['volumes']) == 1 and 'bind' in template['volumes'][0] and template['volumes'][0]['bind'].endswith('/config'):
