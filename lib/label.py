@@ -85,7 +85,7 @@ def main():
                 labels_to_add = [
                     {"name": "traefik.enable", "value": "true"},
                     # {"name": "traefik.http.routers.{}.rule".format(service_name), "value": "HostRegexp(`^{}\..*`)".format(service_name)},
-                    {"name": "traefik.http.routers.{}.rule".format(service_name), "value": "Host(`{}".format(service_name)+'.{$DOMAIN}'+'`)'},
+                    {"name": "traefik.http.routers.{}.rule".format(service_name), "value": "Host(`{}".format(service_name)+'.{$TRAEFIK_INGRESS_DOMAIN}'+'`)'},
 
                     {"name": "traefik.http.routers.{}.entrypoints".format(service_name), "value": "https"},
                     {"name": "traefik.http.services.{}.loadbalancer.server.port".format(service_name), "value": service_port},
@@ -100,7 +100,7 @@ def main():
                     {"name": "mafl.title", "value": "{}".format(template.get('title', template.get('name', '')))},
                     {"name": "mafl.description", "value": "{}".format(first_sentence(remove_markdown(template['description'])))},
                     # {"name": "mafl.tag", "value": "{}".format(template['tag'])},
-                    {"name": "mafl.link", "value": "https://{}".format(service_name) + '.{$DOMAIN}' },
+                    {"name": "mafl.link", "value": "https://{}".format(service_name) + '.{$TRAEFIK_INGRESS_DOMAIN}' },
                     {"name": "mafl.icon.wrap", "value": "true"},
                     {"name": "mafl.icon.color", "value": "#007acc"},
                     {"name": "mafl.status.enabled", "value": "true"},
